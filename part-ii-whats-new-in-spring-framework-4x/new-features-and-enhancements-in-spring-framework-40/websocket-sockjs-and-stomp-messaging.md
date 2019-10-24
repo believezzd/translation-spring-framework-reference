@@ -1,0 +1,5 @@
+新的spring-websocket模块，对在web应用中基于WebSocket，客户端和服务端的双向通讯提供了有力的支持。他兼容JSR-356，Java WebSocket API，并且提供了基于SockJS的fallback选项（例如，WebSocket emulation）用于不支持WebSocket协议的浏览器（例如，IE10以下）。
+
+一个新的spring-messaging模块添加用于支持STOMP作为WebSocket的子协议，并且可以以注解编程的模式单独在应用中使用，可以用来路由和处理从WebSocket客户端得到的STOMP消息。因此@Controller现在可以修饰@RequestMapping和@MessageMapping方法，用于处理HTTP请求和使用WebSocket连接的客户端发送的消息。新的spring-messaging模块也包含以前集成在spring中的关键抽象元素，例如Message、 MessageChannel、MessageHandler和其他基于消息的应用的基础。
+
+关于更加详细的细节，包括更加详细的介绍，请参考26章节，WebSocket支持。

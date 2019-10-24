@@ -1,0 +1,3 @@
+#### Test
+
+spring-test模块通过与JUnit和TestNG的组合使得可以支持单元测试和集成测试。他提供了加载spring ApplicationContexts的一致性功能并且缓存了这些context。他也提供了模拟对象使得你可以在你的测试代码中实现隔离。

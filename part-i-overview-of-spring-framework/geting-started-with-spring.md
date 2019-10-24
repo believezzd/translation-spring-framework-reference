@@ -1,0 +1,7 @@
+## 1. Getting Started with Spring
+
+这篇参考手册提供了Spring框架的详细信息。本文档对所有的特性提供了详尽的文档参考，并且也包括Spring最核心的底层内容，比如依赖注入。
+
+如果你刚刚开始学习Spring，你或许想通过建立一个基于Spring Boot的应用为起点开始使用Spring框架。Spring Boot提供了一个快捷的方式来建立一个基于Spring的生产级应用。他是基于Spring框架的约定优于配置的准则，使得你可以尽快的让你的程序跑起来。
+
+你可以使用start.spring.io来生成一个基本的骨架，或者通过使用参考"Getting Started" guides中的一个教程比如开始创建一个REST风格的WebService程序。为了方便理解，这些教程都是任务驱动的，并且里面的大部分都是基于Spring Boot的。他们也涵盖了你可能会在处理某些特殊问题时会使用到的Spring的其他组件部分。

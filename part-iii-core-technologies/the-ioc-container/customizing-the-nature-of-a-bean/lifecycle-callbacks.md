@@ -1,0 +1,11 @@
+为了与容器管理的bean的生命周期交互，你可以实现spring的InitializingBean和DisposableBean接口。容器调用afterPropertiesSet方法用于前者并且调用destroy方法用于后者允许bean表现特定的行为在初始化和销毁时。
+
+>tip
+>JSP-250中的@PostConstruct和@PreDestroy注解是现代spring应用中比较好的方式用于回调生命周期方法。使用这样的注解意味着你的bean不在和spring中特定饿接口绑定。详见7.9.8章节“@PostConstruct和@PreDestroy”
+>如果你不想使用JSR-250注解但是你寻找其他解耦的方式可以考虑使用init-method和destroy-method在对象的定义元数据的时候。
+
+在内部，spring框架使用BeanPostProcessor的实现来处理回调的接口，她可以找到并调用合适的方法。如果你需要自定义特性或其他生命周期的行为，sping没有提供直接的方式调用，你可以实现BeanPostProcessor类。详见7.8章节，“Container Extension Points”。
+
+除了初始化和销毁方法的回调，spring管理的对象也可以实现生命周期接口以方便这些对象可以参与启动和关闭过程通过容器自身的生命周期。
+
+生命周期方法回调接口在这个章节中被描述。
