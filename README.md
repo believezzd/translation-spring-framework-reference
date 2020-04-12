@@ -1,6 +1,6 @@
 ## 翻译说明
 
-此文基于Spring Framework Reference Documentation翻译。
+此文基于 Spring Framework Reference Documentation 翻译。
 
 ## Author
 
