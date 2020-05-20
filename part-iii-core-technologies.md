@@ -12,8 +12,11 @@ Spring集成的AspectJ（当前最好的-依据其特性-是当前最成熟的AO
 
 * Chapter 9, Validation, Data Binding, and Type Conversion
 
-* Chapter 10, Spring Expression Language (SpEL)
+* Chapter 10, Spring Expression Language \(SpEL\)
 
 * Chapter 11, Aspect Oriented Programming with Spring
 
 * Chapter 12, Spring AOP APIs
+
+
+
