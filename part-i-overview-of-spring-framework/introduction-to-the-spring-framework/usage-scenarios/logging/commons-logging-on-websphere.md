@@ -1,3 +1,5 @@
+##### Commons Logging on WebSphere
+
 Spring应用程序可能运行在本身提供JCL实现的容器上，例如IBM的容器WebSphere Application Server (WAS)。这本身不会引起问题，但导致的两种场景需要被理解:
 
 在“父优先”类加载器委托模型中(在WAS中是默认)，应用程序总是会启动服务器提供的公共日志记录版本，委托给WAS日志子系统(即实际上是基于JUL)。JCL的一个应用程序提供的变体，不管它是否是标准的公共日志记录或者，将有效地忽略JCL-over-SLF4J桥以及任何本地包含的日志提供程序。
