@@ -1,3 +1,5 @@
+##### Maven "Bill of Materials" Dependency
+
 在使用Maven时很有可能混合了不同版本的spring的jar文件。例如，你或许找到了第三方的库或者其他spring的工程，或者传递依赖了一个过时的版本。如果你忘记显式的进行声明，很多你意想不到的问题会出现。
 
 为了解决这样的问题，Maven支持BOM("bill of materials")的概念依赖。你可以引入spring-framework-bom在你的依赖管理中，以保证所有的spring依赖都在同一个版本上。
