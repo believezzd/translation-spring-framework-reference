@@ -49,6 +49,7 @@
         * [JMS Improvements](jms-improvements.md)
         * [Web Improvements](part-ii-whats-new-in-spring-framework-4x/web-improvements.md)
         * [WebSocket Messaging Improvements](part-ii-whats-new-in-spring-framework-4x/websocket-messaging-improvements.md)
+        * [Testing Improvements](part-ii-whats-new-in-spring-framework-4x/testing-improvements.md)
     * [6. New Features and Enhancements in Spring Framework 4.3](part-ii-whats-new-in-spring-framework-4x/new-features-and-enhancements-in-spring-framework-43.md)
 * [Part III. Core Technologies](part-iii-core-technologies.md)
     * [7. The IoC container](part-iii-core-technologies/the-ioc-container.md)
