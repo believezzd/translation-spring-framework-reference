@@ -4,12 +4,12 @@
 
 ```
 <dependencies>
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-context</artifactId>
-		<version>4.3.9.RELEASE</version>
-		<scope>runtime</scope>
-	</dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>4.3.9.RELEASE</version>
+	<scope>runtime</scope>
+    </dependency>
 </dependencies>
 ```
 
