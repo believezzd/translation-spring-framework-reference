@@ -1,3 +1,5 @@
+##### Using Log4j 1.2 or 2.x
+
 >Note
 >Log4j 1.2 is EOL in the meantime. Also, Log4j 2.3 is the last Java 6 compatible release, with newer Log4j 2.x releases requiring Java 7+.
 
