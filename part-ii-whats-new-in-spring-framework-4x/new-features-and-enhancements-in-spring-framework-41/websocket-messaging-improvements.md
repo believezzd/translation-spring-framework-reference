@@ -1,3 +1,5 @@
+### 4.4 WebSocket Messaging Improvements
+
 - 客户端支持SockJS。将SockJsClient和相同包中类。
 
 - 当STOMP的客户端订阅或取消订阅时，新的应用端上下文事件SessionSubscribeEvent和SessionUnsubscribeEvent被触发。
