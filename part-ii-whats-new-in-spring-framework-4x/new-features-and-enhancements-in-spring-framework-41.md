@@ -1,3 +1,5 @@
+## 4. New Features and Enhancements in Spring Framework 4.1
+
 Spring4.1包含许多改进，会在接下来的章节进行描述：
 
 - Section 4.1, “JMS Improvements
