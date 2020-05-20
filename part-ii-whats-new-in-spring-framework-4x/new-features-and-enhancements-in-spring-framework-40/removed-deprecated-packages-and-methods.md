@@ -1,3 +1,5 @@
+### Removed Deprecated Packages and Methods
+
 所有过时的包和许多过时的类和方法在4.0版本中已经去掉了。如果你从以前的版本升级到4.0，你应该保证你修复了每一个对过时方法的调用。
 
 关于详尽的修改，请参考API Differences Report。
