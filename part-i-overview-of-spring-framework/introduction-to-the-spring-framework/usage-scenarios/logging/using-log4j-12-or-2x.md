@@ -1,6 +1,7 @@
 ##### Using Log4j 1.2 or 2.x
 
->Note
+>**Note**
+
 >Log4j 1.2 is EOL in the meantime. Also, Log4j 2.3 is the last Java 6 compatible release, with newer Log4j 2.x releases requiring Java 7+.
 
 许多人使用Log4j作为日志的配置和管理框架。它是高效且完善，事实上这就是我们在构建Spring时在运行时所使用的。Spring
