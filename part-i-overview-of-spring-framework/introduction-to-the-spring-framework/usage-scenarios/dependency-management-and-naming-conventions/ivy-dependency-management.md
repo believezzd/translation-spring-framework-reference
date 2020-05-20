@@ -1,3 +1,5 @@
+##### Ivy Dependency Management
+
 如果你倾向于使用Ivy来管理依赖，那么下面提供一下简单的配置选项。
 
 配置Ivy指向spring的仓库，你需要修改ivysettings.xml文件。
