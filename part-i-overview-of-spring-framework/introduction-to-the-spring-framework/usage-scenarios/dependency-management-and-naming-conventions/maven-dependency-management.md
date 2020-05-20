@@ -1,3 +1,5 @@
+##### Maven Dependency Management
+
 如果你使用Maven作为依赖管理，那么你不用显式的声明对logging的依赖。例如，如果使用依赖注入来构建一个应用，你的Maven文件看起来应该是这样的。
 
 ```
