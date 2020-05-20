@@ -1,3 +1,5 @@
+### 3.6 Core Container Improvements
+
 对于核心容器有如下的增强:
 
 - Spring现在在注入bean的时候，将泛型作为一种修饰符的形式。例如，你在使用Spring Data Repository时，你可以简单的这样使用：@Autowired Repository<Customer> customerRepository
