@@ -1,3 +1,5 @@
+### Cacheing Improvements
+
 spring4.1支持JCache（JSR-107）声明，使用spring已经存在的cache配置和基础抽象。使用标准的注解，不需要修改。
 
 spring4.1也显著提升了其自身的cacheing机制：
