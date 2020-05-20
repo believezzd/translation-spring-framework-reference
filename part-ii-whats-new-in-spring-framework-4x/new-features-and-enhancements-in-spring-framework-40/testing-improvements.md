@@ -1,3 +1,5 @@
+### 3.9 Testing Improments
+
 除了去除在spring-test模块中一些过时的代码，spring框架4.0在单元和集成测试中加入了新的特性:
 
 - 所有在spring-test模块中的注解（例如 @ContextConfiguration、@WebAppConfiguration、@ContextHierarchy、@ActiveProfiles等等）现在都可以作为元注解来自定义注解以减少在测试中的配置。
