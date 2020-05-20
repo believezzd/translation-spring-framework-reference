@@ -1,4 +1,4 @@
-### General Web Improments
+### 3.7 General Web Improments
 
 Servlet2.5虽然依然保留，但是spring框架4.0已经将注意转移到Servlet3.0以上的环境中。如果你正在使用Spring MVC测试框架，你要确保Servlet3.0相关的JAR在你的classpath中。
 
