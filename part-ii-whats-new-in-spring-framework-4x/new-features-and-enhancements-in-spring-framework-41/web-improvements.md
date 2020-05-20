@@ -1,3 +1,5 @@
+### 4.3 Web Improvements
+
 - 目前对资源的处理是基于ResourceHttpRequestHandler的，并且被扩展成一个新的抽象集合ResourceResolver、ResourceTransformer和ResourceUrlProvider。内部一系列实现为了支持versioned resource URLs(为了更有效的HTTP缓存)，定位压缩的资源，生成HTML5 AppCache的清单等等。详细见22.16.9章 为了资源服务。
 
 - JDK1.8中的java.util.Optional现在为@RequestParam、@RequestHeader、and @MatrixVariable控制器方法参数提供支持。
