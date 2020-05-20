@@ -1,3 +1,5 @@
+### 7.1 Introduction to Spring IoC Container and beans
+
 这一章覆盖了spring框架IOC容器的概念。IOC作为依赖注入广为人知。这其实是一个过程，object定义他们的依赖，就是需要其他object配合才能工作。通过构造器参数、工厂方法的参数或者当在构造器调用之后设置属性的方式或工厂方法在中返回。当创建bean后容器注入这些依赖。这个过程是反过来的，因此名字叫控制反转。对于bean自身而言控制依赖的实例化或定位通过直接使用类的构造器或服务定位模式的机制。
 
 org.springframework.beans包和org.springframework.context包是spring框架IOC容器的基础。BeanFactory接口提供了一个高级的可配置的机制用于管理任意类型的object。ApplicationContext是BeanFactory的子接口。添加了一些简单的AOP特性的集成、消息信息的处理（用于国际化）、事件发布和应用层的上下文，例如在web应用中使用的WebApplicationContext。
