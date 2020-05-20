@@ -1,3 +1,5 @@
+### 4.1 JMS Improvements
+
 spring4.1提供了一种更简单的方式注册JMS listener通过使用@JmsListener来修饰一个方法。XML的命名空间支持一种新的方式(jms:annotation-driven)，并且也可以通过java来配置使用(@EnableJms, JmsListenerContainerFactory)。也可以通过编程使用JmsListenerConfigurer来注册listener。
 
 spring4.1也将JMS支持与spring4.0中的spring-messaging抽象结合起来，那就是：
