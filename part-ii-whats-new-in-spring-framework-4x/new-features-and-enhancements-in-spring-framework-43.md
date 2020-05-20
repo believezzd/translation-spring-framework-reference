@@ -10,7 +10,7 @@ Spring4.3 包含许多改进，会在接下来的章节进行描述：
 
 * Section 6.4, "JMS Improvements"
 
-* Section 6.5, ""
+* Section 6.5, "Web Improvements"
 
 * Section 6.6, "WebSockets Messaging Improments"
 
