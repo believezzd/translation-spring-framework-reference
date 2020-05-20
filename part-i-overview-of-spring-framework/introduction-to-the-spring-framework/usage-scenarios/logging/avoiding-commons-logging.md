@@ -1,3 +1,5 @@
+##### Avoiding Commons Logging
+
 不幸的是，标准的公共日志API中的运行时发现算法对于终端用户来说很方便，但可能会有问题。如果您想避免JCL的标准查找，基本上有两种方法来关闭它:
 
 1. 将依赖项从spring-core模块中排除(因为它是惟一显式地依赖commons-logging的模块)
