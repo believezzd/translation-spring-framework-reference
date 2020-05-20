@@ -1,3 +1,3 @@
 # Part II. What's New in SPring Framework 4.x
 
-This chapter provides an overview of the new features and improvements that have been introduced with Spring Framework 4.3. If you are interested in more details, please see the Issue Tracker tickets that were resolved as part of the 4.3 development process.
+这个章节从整体上介绍了 Spring 4.3 引入的新的特性和改进内容。如果你对详细的内容感兴趣，可以访问：Issue Tracker Tickers，这个是 Spring 4.3 开发过程中解决的部分问题的列表。
