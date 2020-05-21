@@ -7,7 +7,8 @@ ApplicationContext context =
     new ClassPathXmlApplicationContext(new String[] {"services.xml", "daos.xml"});
 ```
 
->Note
+>**Note**
+
 >学习到现在，你或许想更深入知道spring的资源抽象，可以看第8章节的描述，提供了方便的方法从定义的URI表达式中读取输入流。另外，使用在构造器的使用说明可以看8.7章节，“应用上下文和资源路径”。
 
 面的例子展示了服务层object（services.xml）配置文件：
