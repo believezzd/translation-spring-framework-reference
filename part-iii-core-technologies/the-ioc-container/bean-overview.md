@@ -27,5 +27,6 @@ destruction method|the section called “Destruction callbacks”
 
 除此之外，bean的信息中包括创建一个特殊的bean，ApplicationContext的实现也允许将用户在容器外已经创建的对象注册为bean。他的实现是通过getBeanFactory方法返回的BeanFactory的实现DefaultListableBeanFactory来访问ApplicationContext的BeanFactory。DefaultListableBeanFactory支持通过registerSingleton和registerBeanDefinition来注册bean。然而，通常应用都应该使用元数据来定义bean。
 
->Note
+>**Note**
+
 >Bean的元数据和手动添加的单例实例需要尽早注册，为了使容器正确推断它们在自动装配和其他内省的步骤。覆盖已经存在的元数据和已经存在的单例实例在一定程度上是支持的，在运行时注册新的bean（并发的访问工厂）在官方上是不支持的，或许会导致并发访问的异常或不一致的状态在bean的容器中。
