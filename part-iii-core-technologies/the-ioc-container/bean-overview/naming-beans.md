@@ -6,7 +6,8 @@
 
 并不一定要求你为bean起一个id或name。如果一个bean没有id或name，容器会为id生成一个唯一的name。然而，如果你想通过名字来引用bean，或者通过ref标签来引用bean或者使用Service Locator style lookup，你必须为bean提供一个name。
 
->命名规范
+>**命名规范**
+
 >规范和标准java对实例属性的命名规范相同。那就是，bean的名字由小写字母开头，然后采用驼峰式。例如这样的名字'accountManager'、'accountService'、'userDao'、'loginController'等等。
 >bean命名的一致性使得你的配置更容易阅读和理解，如果你在使用spring的aop，这会对你有益，当你应用advice对一系列的bean通过name进行切入时候。
 
