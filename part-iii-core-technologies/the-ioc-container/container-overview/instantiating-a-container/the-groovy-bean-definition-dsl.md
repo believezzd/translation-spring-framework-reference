@@ -1,3 +1,5 @@
+##### The Groovy Bean Definition DSL
+
 作为外部化配置元数据的进一步示例，bean定义也可以用Spring的Groovy Bean定义DSL，如Grails框架所知。一般来说，这样的配置会在".groovy"文件中，结构如下：
 
 ```
