@@ -40,3 +40,7 @@
     }
     ```
     * 更多内容请查看 Spring Annotation Programming Model
+
+* 搜索元注解的检索算法有大量的改进。例如，本地声明的组合注解优于继承性的注解。
+
+* 注解属性的集合（与 AnnotationAttributes 实例）可以被合成（也就是转化）为一个注解。
