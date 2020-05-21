@@ -11,6 +11,9 @@
 >内部类的命名
 
 >如果你想为静态内部类配置bean的定义，你必须使用内部类的binary name。
+
 >例如，如果在com.example包下有个类叫Foo，并且Foo有个内部类叫Bar，那么class属性的值应该是？
+
 >```com.example.Foo$Bar```
+
 >注意，在name中使用$符号用于区分内部类和外部类。
