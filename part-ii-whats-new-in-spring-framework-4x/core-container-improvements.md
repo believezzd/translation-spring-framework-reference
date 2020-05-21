@@ -1,1 +1,0 @@
-### 6.1 Core Container Improvement
