@@ -16,7 +16,7 @@
   * 以下的注解已经更新了对 @AliasFor 的支持，使他们为自身的属性值提供有意义的别名: @Cacheable, @CacheEvict, @CachePut, @ComponentScan, @ComponentScan.Filter, @ImportResource, @Scope, @ManagedResource, @Header, @Payload, @SendToUser, @ActiveProfiles, @ContextConfiguration, @Sql, @TestExecutionListeners, @TestPropertySource, @Transactional, @ControllerAdvice, @CookieValue, @CrossOrigin, @MatrixVariable, @RequestHeader, @RequestMapping, @RequestParam, @RequestPart, @ResponseStatus, @SessionAttributes, @ActionMapping, @RenderMapping, @EventListener, @TransactionalEventListener
   
   * 例如，在 Spring-test 模块中的 @ContextConfiguration 被声明成下面这样：
-  ```
+
   public @interface ContextConfiguration {
   
     @AliasFor("locations")
@@ -24,9 +24,7 @@
     
     @AliasFor("value")
     String[] locations() default {};
-    // ...
   }
-  ```
+
 
   * ass
-  234
