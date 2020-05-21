@@ -18,9 +18,25 @@
     * 例如，在 Spring-test 模块中的 @ContextConfiguration 被声明成下面这样：
     ```
     public @interface ContextConfiguration {
+    
         @AliasFor("locations")
         String[] value() default {};
+        
         @AliasFor("value")
         String[] locations() default {};
+        //...
     }
     ```
+    
+    * 同样的，在元注解上覆盖属性的组合注解可以使用 @AliasFor 进行细粒度控制，在有层次的属性重写情况下。事实上，现在可以给元注解的属性定义一个别名
+    
+    * 例如，可以自定义属性定义组合注解：
+    ```
+    @ContextConfiguration
+    public @interface MyTestConfig {
+        @AliasFor(annotation = ContextConfiguration.class, attribute = "value")
+        String[] xmlFiles();
+        // ...
+    }
+    ```
+    * 更多内容请查看 Spring Annotation Programming Model
