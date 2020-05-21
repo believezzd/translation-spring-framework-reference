@@ -13,7 +13,7 @@ Spring容器的其他配置方式，见
 
 - 基于java的配置：从spring3.0开始，许多spring JavaConfig工程中的特性已经加入了spring框架的核心包。以方便你在应用中通过java来定义bean而不是使用xml文件。如果需要使用这些新特性，见@Configuration、@Bean、@Import和@DependsOn注解。
 
-spring的配置中至少有一个或多个bean的定义需要容器来管理。基于xml的配置元数据显示bean需要使用<bean>元素，并且顶层元素是<beans>。java配置通常使用在@Configuration的类中定义@Bean修饰的方法。
+Spring的配置中至少有一个或多个bean的定义需要容器来管理。基于xml的配置元数据显示bean需要使用<bean>元素，并且顶层元素是<beans>。java配置通常使用在@Configuration的类中定义@Bean修饰的方法。
 
 bean的定义取决组成你应用的实际object。通常你会定于服务层object、数据访问object（DAOs）、类似于Struts Action实例和类似于Hibernate SessionFactory、JMS队列等的基础object。通常不需要配置细粒度的领域对象在容器中，因为这通常是数据访问层和业务逻辑来负责这些领域对象的创建与加载。然而你可以使用AspectJ来控制没有被IOC容器包含的外部bean。见在spring中使用AspectJ来依赖注入object。
 
