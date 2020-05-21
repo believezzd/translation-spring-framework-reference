@@ -1,3 +1,5 @@
+###### References to other beans(collaborators)
+
 在<constructor-arg/>和<property/>元素中，ref是一个final元素。这里你可以设置来引用容器中里一个被管理的bean。被引用的bean是通过bean的set方法的注入的依赖，并且会在被需要的类之前被初始化。（如果需要的是一个单例的bean，或许已经被容器初始化了）。所有的引用都最终会指向另外一个对象。范围和校验依赖于你是否明确指定了另一个object的id或name，在bean、local或parent属性中。
 
 使用ref来定义引用的bean是最常见的形式，可以引用同一个容器或父容器的任意一个bean，不管有没有在相同的xml文件中配置。bean的value属性和目标bean的id属性是一样的，或是目标bean的name属性。
