@@ -20,6 +20,7 @@
   public @interface ContextConfiguration {
     @AliasFor("locations")
     String[] value() default {};
+    
     @AliasFor("value")
     String[] locations() default {};
   }
