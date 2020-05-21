@@ -1,3 +1,5 @@
+##### Dependency resolution process
+
 容器是按照如下的方式来处理bean的依赖的:
 
 - ApplicationContext根据配置元数据对所有的bean的描述进行初始化。配置元数据可以通过XML、Java代码或注解方式提供。
