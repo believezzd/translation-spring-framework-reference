@@ -1,3 +1,5 @@
+### 7.3 Bean overview
+
 Spring的IOC容器管理一个或多个bean。这些bean由你提供给容器的配置元数据来创建，例如，在xml中bean的定义。
 
 在容器中，这些bean的定义被作为BeanDefinition的对象，包括以下的元数据（包括其他的信息）：
