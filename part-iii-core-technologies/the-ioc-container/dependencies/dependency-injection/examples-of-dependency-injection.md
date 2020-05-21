@@ -1,3 +1,5 @@
+##### Examples of dependency injection
+
 下面的例子使用了基于xml的配置元数据用于set方法的注入。下面是一部分spring的xml配置文件声明了一些bean的定义。
 
 ```
