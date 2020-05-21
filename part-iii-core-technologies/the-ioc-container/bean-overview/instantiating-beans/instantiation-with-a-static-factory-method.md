@@ -1,3 +1,5 @@
+##### Instantiating with static factory method
+
 当你使用静态工厂方法创建一个bean时，你使用class属性定义的类包含静态工厂方法和一个属性叫factory-method来定义工厂方法自身的名字。你应该可以调用这个方法（使用后续描述的可选参数）并且返回一个live的object，这个object和用构造器创建的没有什么区别。这样的用法通常是为了调用静态工厂在legacy code中。
 
 下面的bean定义了这个bean将会被工厂方法来创建。这个定义没有定义返回object的类型，只有这个类包含工厂方法。在这个例子中，createInstance方法必须是静态方法。
