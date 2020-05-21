@@ -16,7 +16,7 @@ beans {
     }
     myService(MyService) {
         nestedBean = { AnotherBean bean ->
-            dataSource = dataSource
+            dataSv ource = dataSource
         }
     }
 }

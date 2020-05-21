@@ -1,3 +1,5 @@
+#### Using the container
+
 ApplicationContext是一个接口用于保持高级的工厂可以提供注册不同bean和他们的依赖的能力。使用方法T getBean(String name, Class<T> requiredType)你可以取回你bean的实例对象。
 
 ApplicationContext允许你通过下面的方式读取bean的定义和访问他们：
