@@ -1,3 +1,5 @@
+#### Instantiating beans
+
 一个bean的定义用于实例化一个或多个object。容器根据bean的要求，使用配置元数据封装bean的定义创建（或获得）一个实际的object。
 
 如果你使用基于xml的配置元数据，你在bean标签定义的class属性将会是object实例化的类型（或class）。这个class属性中必须强制定义一个class用于一个bean定义的实体。（例如，见“Instantiation using an instance factory method”and Section 7.7, “Bean definition inheritance”）
