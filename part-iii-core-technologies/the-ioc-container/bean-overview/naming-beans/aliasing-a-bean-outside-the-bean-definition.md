@@ -8,7 +8,7 @@
 <alias name="fromName" alias="toName"/>
 ```
 
-在这种情况下，在同一个容器中叫fromName，但是在使用了别名之后，toName指向了bean。
+在这种情况下，有一个 bean (在同一个容器中)叫fromName，但是在使用了别名定义之后，bean 指向了 toName 这个别名。
 
 例如，子系统A的配置元数据指向数据源通过subsystemA-dataSource。子系统B的配置元数据指向数据源通过subsystemB-dataSource。主应用集成两个子系统，并且通过myApp-dataSource来指向DataSource。为了让这三个source指向同一个配置元数据，你可以如下所示定义配置元属性。
 
