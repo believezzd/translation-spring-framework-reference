@@ -1,3 +1,5 @@
+#### Configuration metadata
+
 通过前面的图展示，spring IOC容器处理一系列配置的元数据，这些元数据代表了你的应用是如何告诉spring容器来初始化实例、配置和集合应用的object。
 
 配置元数据是以一种比较简单的XML格式，也是本章节会介绍的用于阐述spring IOC容器中关键的信息和特性的方式。
