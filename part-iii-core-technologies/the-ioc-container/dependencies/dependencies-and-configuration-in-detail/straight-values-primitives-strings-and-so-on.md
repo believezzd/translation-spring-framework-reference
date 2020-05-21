@@ -1,3 +1,5 @@
+##### Straight values(primitives, Strings, and so on)
+
 <property/>元素定义的内容或构造器参数定义的内容都是方便阅读的string形式。spring的转换服务将这些值转化为实际中需要的实际类型。
 
 ```
