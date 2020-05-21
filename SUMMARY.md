@@ -51,7 +51,7 @@
     * [5.5 WebSocket Messaging Improvements](part-ii-whats-new-in-spring-framework-4x/new-features-and-enhancements-in-spring-framework-42/websocket-messaging-improvements.md)
     * [5.6 Testing Improvements](part-ii-whats-new-in-spring-framework-4x/new-features-and-enhancements-in-spring-framework-42/testing-improvements.md)
   * [6. New Features and Enhancements in Spring Framework 4.3](part-ii-whats-new-in-spring-framework-4x/new-features-and-enhancements-in-spring-framework-43.md)
-    * [6.1 Core Container Improvements](part-ii-whats-new-in-spring-framework-4x/core-container-improvements.md)
+    * [6.1 Core Container Improvements](part-ii-whats-new-in-spring-framework-4x/new-features-and-enhancements-in-spring-framework-43/core-container-improvements.md)
     * [6.2 Data Access Improvements](part-ii-whats-new-in-spring-framework-4x/new-features-and-enhancements-in-spring-framework-43/data-access-improvements.md)
     * [6.3 Caching Improvements](part-ii-whats-new-in-spring-framework-4x/new-features-and-enhancements-in-spring-framework-43/caching-improvements.md)
     * [6.4 JMS Improvements](part-ii-whats-new-in-spring-framework-4x/new-features-and-enhancements-in-spring-framework-43/jms-improvements.md)
