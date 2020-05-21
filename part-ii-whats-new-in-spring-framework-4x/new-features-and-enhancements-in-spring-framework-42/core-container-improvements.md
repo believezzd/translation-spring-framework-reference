@@ -18,10 +18,15 @@
   * 例如，在 Spring-test 模块中的 @ContextConfiguration 被声明成下面这样：
   ```
   public @interface ContextConfiguration {
-    @AliasFor("locations")
-    String[] value() default {};
+      @AliasFor("locations")
+      String[] value() default {};
     
-    @AliasFor("value")
-    String[] locations() default {};
+      @AliasFor("value")
+      String[] locations() default {};
   }
+  ```
+  
+  ```
+  aaa
+     bbb
   ```
