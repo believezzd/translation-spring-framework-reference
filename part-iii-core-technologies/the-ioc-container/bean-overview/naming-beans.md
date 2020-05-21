@@ -11,5 +11,6 @@
 >规范和标准java对实例属性的命名规范相同。那就是，bean的名字由小写字母开头，然后采用驼峰式。例如这样的名字'accountManager'、'accountService'、'userDao'、'loginController'等等。
 >bean命名的一致性使得你的配置更容易阅读和理解，如果你在使用spring的aop，这会对你有益，当你应用advice对一系列的bean通过name进行切入时候。
 
->Note
+>**Note**
+
 >当在classpath下进行组件扫描时，spring会为每个未命名的组件生成名字，规则是：将类名的首字母小写。然而，有一些特殊情况，比如第一个和第二个字符都是大写，则保留原有的名字。这和java.beans.Introspector.decapitalize的规则是一样的（spring在这里使用）。
