@@ -9,24 +9,18 @@
 * @Resource 注解支持 @Lazy 的声明，与 @Autowired 类似，会接受一个延迟加载的代理来获取目标 bean
 
 * 应用的事件框架现在提供注解模型，而且可以用来发布任意事件。
-  * 任何在 IoC 容器中被管理的bean 的 public 方法在都可以被 @EventListener 修饰来进行事件消费。
-  * @TransactionEventListener 支持绑定事务的事件消费。
+    * 任何在 IoC 容器中被管理的bean 的 public 方法在都可以被 @EventListener 修饰来进行事件消费。
+    * @TransactionEventListener 支持绑定事务的事件消费。
   
 * Spring 4.2 提供了对注解别名的声明和查找的一流支持。新的@AliasFor注解可以用于通过一个注解声明一对别名的属性，或者一个别名从自定义组合的注解到一个元注解。
-  * 以下的注解已经更新了对 @AliasFor 的支持，使他们为自身的属性值提供有意义的别名: @Cacheable, @CacheEvict, @CachePut, @ComponentScan, @ComponentScan.Filter, @ImportResource, @Scope, @ManagedResource, @Header, @Payload, @SendToUser, @ActiveProfiles, @ContextConfiguration, @Sql, @TestExecutionListeners, @TestPropertySource, @Transactional, @ControllerAdvice, @CookieValue, @CrossOrigin, @MatrixVariable, @RequestHeader, @RequestMapping, @RequestParam, @RequestPart, @ResponseStatus, @SessionAttributes, @ActionMapping, @RenderMapping, @EventListener, @TransactionalEventListener
+    * 以下的注解已经更新了对 @AliasFor 的支持，使他们为自身的属性值提供有意义的别名: @Cacheable, @CacheEvict, @CachePut, @ComponentScan, @ComponentScan.Filter, @ImportResource, @Scope, @ManagedResource, @Header, @Payload, @SendToUser, @ActiveProfiles, @ContextConfiguration, @Sql, @TestExecutionListeners, @TestPropertySource, @Transactional, @ControllerAdvice, @CookieValue, @CrossOrigin, @MatrixVariable, @RequestHeader, @RequestMapping, @RequestParam, @RequestPart, @ResponseStatus, @SessionAttributes, @ActionMapping, @RenderMapping, @EventListener, @TransactionalEventListener
   
-  * 例如，在 Spring-test 模块中的 @ContextConfiguration 被声明成下面这样：
-  ```
-  public @interface ContextConfiguration {
-      @AliasFor("locations")
-      String[] value() default {};
-    
-      @AliasFor("value")
-      String[] locations() default {};
-  }
-  ```
-  
-  ```
-  aaa
-     bbb
-  ```
+    * 例如，在 Spring-test 模块中的 @ContextConfiguration 被声明成下面这样：
+    ```
+    public @interface ContextConfiguration {
+        @AliasFor("locations")
+        String[] value() default {};
+        @AliasFor("value")
+        String[] locations() default {};
+        }
+    ```
