@@ -44,3 +44,6 @@
 * 搜索元注解的检索算法有大量的改进。例如，本地声明的组合注解优于继承性的注解。
 
 * 注解属性的集合（与 AnnotationAttributes 实例）可以被合成（也就是转化）为一个注解。
+
+* 基于field的数据绑定（DirectFieldAccessor）的特性已经与当前基于property的数据绑定一样（BeanWrapper）。特别的是，基于field的绑定现在支持集合、数组和Maps。
+
