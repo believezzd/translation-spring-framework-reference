@@ -1,3 +1,5 @@
+##### Instantiating using an instance factory method
+
 和使用静态工厂方法初始化类似，使用实例化工厂方法调用一个已经存在的bean的非静态方法从构造器中创建一个新的bean。使用这样的特性，需要将class属性设置为空，并且在factory-bean属性中定义当前容器或父容器中包含创建object的方法的类。然后在factory-method的属性中设置工厂方法的名字。
 
 ```
