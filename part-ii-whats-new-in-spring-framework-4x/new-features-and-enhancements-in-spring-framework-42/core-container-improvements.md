@@ -22,5 +22,5 @@
         String[] value() default {};
         @AliasFor("value")
         String[] locations() default {};
-        }
+    }
     ```
