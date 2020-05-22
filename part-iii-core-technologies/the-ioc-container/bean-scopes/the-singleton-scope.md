@@ -1,3 +1,5 @@
+#### The singleton scope
+
 singleton bean是只有一个被共享的实例被管理，所有通过id或其他形式匹配的请求都会由同一个在spring容器中的bean实例返回。
 
 也就是说，当你定义了一个单例范围的bean，spring的IOC容器只会通过bean的定义明确创建一个实例。这个单例实例保存在这样单例bean的缓存中，并且所有的子请求和通过name的引用都会返回被缓存的实例。
