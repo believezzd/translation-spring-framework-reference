@@ -1,3 +1,5 @@
+##### Arbitrary method raplacement
+
 一个比lookup method injecion更差形式的方法注入就是在一个被管理bean通过另一个方法实现来替换的任意方法。当需要的时候才看一下内容。
 
 基于xml的配置元数据，你可以使用replaced-method元素来使得另一个方法来替换一个已经部署的bean的已有方法实现。考虑下面的这个类，有一个我们希望覆盖的computeValue方法：
