@@ -122,6 +122,7 @@
       * [Lifecycle callbacks](part-iii-core-technologies/the-ioc-container/customizing-the-nature-of-a-bean/lifecycle-callbacks.md)
         * [Initialization callbacks](part-iii-core-technologies/the-ioc-container/customizing-the-nature-of-a-bean/lifecycle-callbacks/initialization-callbacks.md)
         * [Destruction callbacks](part-iii-core-technologies/the-ioc-container/customizing-the-nature-of-a-bean/lifecycle-callbacks/destruction-callbacks.md)
+        * [Default initialization and destroy methods](part-iii-core-technologies/the-ioc-container/customizing-the-nature-of-a-bean/lifecycle-callbacks/default-initialization-and-destroy-methods.md)
       * [ApplicationContextAware and BeanNameAware](part-iii-core-technologies/the-ioc-container/customizing-the-nature-of-a-bean/applicationcontextaware-and-beannameaware.md)
       * [Other Aware interfaces](part-iii-core-technologies/the-ioc-container/customizing-the-nature-of-a-bean/other-aware-interfaces.md)
   * [8. Resources](part-iii-core-technologies/resources.md)
