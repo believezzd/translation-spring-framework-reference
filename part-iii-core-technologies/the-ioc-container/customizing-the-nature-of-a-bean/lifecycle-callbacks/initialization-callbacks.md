@@ -1,3 +1,5 @@
+##### Initialization callbacks
+
 org.springframework.beans.factory.InitializingBean接口允许bean来实现初始化工作在所有必要的属性被容器设置之后。InitializingBean接口中只定义了一个方法：
 
 ```
