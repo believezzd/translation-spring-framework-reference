@@ -14,11 +14,11 @@ BeanNameAware | b | c
 BootstrapContextAware | b | c
 LoadTimeWeaverAware | b | c
 MessageSourceAware | b | c
-NotificationPublisherAwareSpring | b | c
-PortletConfigAware | b | c
-PortletContextAware | b | c
-ResourceLoaderAware | b | c
-ServletConfigAware | b | c
+NotificationPublisherAwareSpring | Spring JMX notification publisher | Section 31.7, “Notifications” PortletConfigAware | Current PortletConfig the container runs in. Valid only in a web-aware Spring ApplicationContext | Chapter 25, Portlet MVC Framework
+PortletContextAware | Current PortletContext the container runs in. Valid only in a web-aware Spring
+ApplicationContext | Chapter 25, Portlet MVC Framework
+ResourceLoaderAware | Configured loader for low-level access to resources | Chapter 8, Resources
+ServletConfigAware | Current ServletConfig the container runs in. Valid only in a web-aware Spring ApplicationContext | Chapter 22, Web MVC framework
 ServletContextAware | Current ServletContext thecontainer runs in. Valid only in a web-aware Spring ApplicationContext | Chapter 22, Web MVC framework
 
 
