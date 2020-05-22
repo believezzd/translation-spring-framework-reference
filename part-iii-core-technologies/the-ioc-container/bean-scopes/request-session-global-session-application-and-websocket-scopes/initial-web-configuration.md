@@ -1,3 +1,5 @@
+##### Initail web configuration
+
 为了支持request、session、全局session、application和WebSocket范围，一些初始化的配置需要用来定义你的bean。（这些初始化的配置不需要基本的范围支持，如单例和原型）
 
 如何完成这些初始化配置取决于你具体的Servlet环境。
