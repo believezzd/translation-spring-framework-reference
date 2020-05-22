@@ -1,3 +1,5 @@
+##### Request scope
+
 考虑下面这个xml配置的bean定义：
 
 ```
