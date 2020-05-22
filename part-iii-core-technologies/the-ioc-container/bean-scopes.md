@@ -16,7 +16,8 @@ _Table 7.3. Bean scopes_
 | application | 对于每个bean在一个ServletContext的生命周期有效。 只在spring的web应用上下文有效。 |
 | websocket | 对于每个bean在一个WebSocket的生命周期有效。 只在spring的web应用上下文有效。 |
 
->Note
+>**Note**
+
 >在spring3.0中，线程范围是存在的，但是并没有默认被注册。相关信息，见SimpleThreadScope的文档。了解更多有关如何注册或其他自定义范围，见”Using a custom scope“章节。
 
 
