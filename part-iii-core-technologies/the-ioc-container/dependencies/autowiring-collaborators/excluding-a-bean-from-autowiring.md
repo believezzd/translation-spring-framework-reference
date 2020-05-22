@@ -1,3 +1,5 @@
+##### Excluding a bean from autowiring
+
 在每个bean中，你可以将他从自动装配中排除。在spring的xml形式中，在bean元素中指定autowire-candidate属性为false，容器会认为这是一个特殊的bean不能在自动装配被使用（包括注解形式的配置，例如@Autowired）
 
 >Note
