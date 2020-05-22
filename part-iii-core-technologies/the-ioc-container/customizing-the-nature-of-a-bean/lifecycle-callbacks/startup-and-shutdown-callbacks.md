@@ -51,3 +51,4 @@ public interface SmartLifecycle extends Lifecycle, Phased {
 </bean>
 ```
 
+上面提到的，LifecycleProcessor接口定义了回调方法用于刷新和关闭上下文。如果关闭程序开始执行，后者会被调用，但是会在上下文正在关闭的过程中被调用。refresh的回调在另一方面允许了SmartLifecycle的bean的另一个特性。当上下文被刷新是（所有的object被实例化和初始化），回调方法会被调用，并且指向默认的生命周期处理器将检查每个SmartLifecycle对象isAutoStartup方法的boolean返回值。如果是true，那么obje会在那个点启动而不是等到上下文调用他的start方法（不像上下文刷新，上下文启动不会自动发生对于一个标注的上下文实现来说）。phase的值和依赖关系都会影响启动的顺序。
