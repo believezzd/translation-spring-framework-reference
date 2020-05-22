@@ -90,4 +90,4 @@ beanFactory.registerScope("thread", threadScope);
 
 >**Note**
 
-> 当你使用 <aop:scoped-proxy/> 在一个 FactoryBean 的实现类中的时候，是 factory bean 本身的声明周期被代理，不是由 getObject() 方法返回的对象
+> 当你使用 <aop:scoped-proxy/> 在一个 FactoryBean 的实现类中的时候，是 factory bean 本身的声明周期被代理，不是由 getObject() 方法返回的对象。
