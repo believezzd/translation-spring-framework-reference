@@ -2,7 +2,8 @@
 
 Lookup method injection是容器的一种特性来覆盖容器管理bean的方法，返回一个在容器中对命名bean的lookup result。lookup通常用在原型的bean上如上面描述的场景中。spring框架实现这种方法注入通过使用由cglib库生成的二进制代码，来动态生成子类覆盖了这个方法。
 
->Note
+>**Note**
+
 >为了这样的子类可以工作，spring的bean容器中包含的类不能是final的，并且方法也不可以是final的。
 >单元测试一个有抽象方法的类需要你提供一个子类并实现抽象的方法。
 >组件扫描下的具体类也需要具体方法。
