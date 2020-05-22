@@ -8,11 +8,13 @@
 
 ```
 public class DefaultBlogService implements BlogService {
+
     private BlogDao blogDao;
     
     public void setBlogDao(BlogDao blogDao) {
         this.blogDao = blogDao;
     }
+    
     // this is (unsurprisingly) the initialization callback method
     public void init() {
         if (this.blogDao == null) {
