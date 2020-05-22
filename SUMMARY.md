@@ -128,6 +128,7 @@
         * [Shutting down the Spring IoC container gracefully in non-web applications](part-iii-core-technologies/the-ioc-container/customizing-the-nature-of-a-bean/lifecycle-callbacks/shutting-down-the-spring-ioc-container-gracefully-in-non-web-applications.md)
       * [ApplicationContextAware and BeanNameAware](part-iii-core-technologies/the-ioc-container/customizing-the-nature-of-a-bean/applicationcontextaware-and-beannameaware.md)
       * [Other Aware interfaces](part-iii-core-technologies/the-ioc-container/customizing-the-nature-of-a-bean/other-aware-interfaces.md)
+    * [7.7 Bean definition inheritance](part-iii-core-technologies/the-ioc-container/77-bean-definition-inheritance.md)
   * [8. Resources](part-iii-core-technologies/resources.md)
     * [Introduction](part-iii-core-technologies/resources/introduction.md)
 * [Part IV. Testing](part-iv-testing.md)
