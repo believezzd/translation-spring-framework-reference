@@ -7,30 +7,19 @@
 Name | Injected Depend | Explained in...
 -- | :--: |--
 ApplicationContextAware | Declaring ApplicationContext | the section called “ApplicationContextAware and BeanNameAware”
-a | b | c
-a | b | c
-a | b | c
-a | b | c
-a | b | c
-a | b | c
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ApplicationEventPublisherAEwvaenrte | b | c
+BeanClassLoaderAware | b | c
+BeanFactoryAware | b | c
+BeanNameAware | b | c
+BootstrapContextAware | b | c
+LoadTimeWeaverAware | b | c
+MessageSourceAware | b | c
+NotificationPublisherAwareSpring | b | c
+PortletConfigAware | b | c
+PortletContextAware | b | c
+ResourceLoaderAware | b | c
+ServletConfigAware | b | c
+ServletContextAware | Current ServletContext thecontainer runs in. Valid only in a web-aware Spring ApplicationContext | Chapter 22, Web MVC framework
 
 
 
