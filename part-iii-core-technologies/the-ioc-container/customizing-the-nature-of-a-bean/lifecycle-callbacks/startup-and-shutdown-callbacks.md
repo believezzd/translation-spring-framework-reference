@@ -19,7 +19,7 @@ public interface LifecycleProcessor extends Lifecycle {
 }
 ```
 
-意LifecycleProcessor是Lifecycle接口的扩展。他增加了两个方法用于实现容器的refresh和close。
+意LifecycleProcessor是Lifecycle接口的扩展。他增加了两个方法用于容器的refresh和close。
 
 
 
