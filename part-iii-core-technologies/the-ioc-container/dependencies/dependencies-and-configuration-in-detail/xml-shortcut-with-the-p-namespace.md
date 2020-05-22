@@ -1,3 +1,5 @@
+##### XML shortcut with the p-namespace
+
 p命名空间允许你使用bean的元素属性，而不是使用内置的property元素来描述组合bean中属性值。
 
 通过xml的schema定义，spring允许使用命名空间支持外部的定义。这章节中讨论的bean的配置形式定义在XML schema文档中。然而，p命名空间不在xsd文件中而在spring的核心中。
