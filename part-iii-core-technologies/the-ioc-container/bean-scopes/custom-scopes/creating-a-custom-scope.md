@@ -1,3 +1,5 @@
+##### Creating a custom scope
+
 如果需要将你的自定义范围和spring容器结合，你需要实现org.springframework.beans.factory.config.Scope接口，将会在这个章节中进行介绍。关于如何实现你自己的范围，请参考spring框架自身或scope的javadocs文件，会更加详细的介绍你需要实现的方法。
 
 scope接口有4个方法，来获得范围中的对象、删除范围中的对象和允许他们被销毁。
