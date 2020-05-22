@@ -21,6 +21,23 @@ parent="inheritedTestBean" init-method="initialize">
 
 如果子bean不定义class属性，则使用其父bean的class定义，当然也可以覆盖父bean的定义。在下面的例子中，子bean的类必须和父bean相匹配，也就是必须可以接收父bean的属性值。
 
+子bean可以继承范围、构造器参数值、属性值和覆盖父类的方法通过添加新的属性值。任何范围、初始化方法、销毁方法和静态工厂方法设置都可以从父bean的设置中覆盖。
 
+剩下的设置则从子bean定义中获得：依赖、自动注入模式、依赖检查、单例、延迟加载。
 
+前面的例子明确声明了父bean的定义是抽象的，因为使用了抽象的属性定义。如果父bean定义没有定义class属性，需要将bean定义为抽象，如下：
 
+```
+<bean id="inheritedTestBeanWithoutClass" abstract="true">
+    <property name="name" value="parent"/>
+    <property name="age" value="1"/>
+</bean>
+
+<bean id="inheritsWithClass" class="org.springframework.beans.DerivedTestBean"
+parent="inheritedTestBeanWithoutClass" init-method="initialize">
+    <property name="name" value="override"/>
+    <!-- age will inherit the value of 1 from the parent bean definition-->
+</bean>
+```
+
+上面的父bean是不可以被实例化的因为他不完整并且也明确定义了他是抽象的。当一个像这样定义的抽象，通常作为一个纯粹的模板bean定义作为一个父bean来服务子bean。如果试图使用这样的父bean，或作为另一个bean属性的指向或者使用getBean方法使用父bean的id会返回错误。同样，容器内部的preInstantiateSingletons方法会忽略抽象bean的定义。
