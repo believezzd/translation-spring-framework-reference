@@ -4,3 +4,11 @@
 
 *Table 7.4 Aware interfaces*
 
+Name|Injected Depend|Explained in...
+--|:--:|--
+ApplicationContextAware|Declaring
+ApplicationContext|the section called “ApplicationContextAware and BeanNameAware”
+
+
+
+
