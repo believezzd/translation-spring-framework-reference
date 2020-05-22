@@ -2,3 +2,14 @@
 
 BeanPostProcessor接口定义了回调方法，你可以实现这个接口并提供自己的实现集成逻辑（或者覆盖容器中默认的实现）、依赖处理逻辑或其他的。如果你希望在spring容器完成初始化、配置和初始化bean之后做一些逻辑处理，你可以实现一个或多个BeanPostProcessor实现。
 
+你可以配置多个BeanPostProcessor实例，并且你可以可控制在这些BeanPostProcessors中执行设置属性的顺序。如果BeanPostProcessor实现了Ordered接口，你可以设置这些属性。如果你实现自己的BeanPostProcessor，你需要考虑实现Ordered接口。更多的细节，见BeanPostProcessor和Ordered的javadocs。你也可以参考下面的BeanPostProcessors的编程注册。
+
+>**Note**
+
+> BeanPostProcessors操作一个bean（或object）的实例，简单点说，spring的IOC容器在完成初始化之后BeanPostProcessors会完成他的工作。
+
+> BeanPostProcessors的作用域是每个容器。这个只取决于你正在使用的容器层级。如果你在一个容器中定义了BeanPostProcessor，他将会只在那个特定的容器中起作用。换句话说，一个容器中的BeanPostProcessor不会对另一个容器起作用，即便两个容器是相同的继承关系。
+
+>需要改变实际bean的定义（例如，定义bean的蓝图），你需要根据需要像章节7.8.2“使用BeanPostProcessor来自定义配置元数据”的描述一样来使用BeanPostProcessor。
+
+  
