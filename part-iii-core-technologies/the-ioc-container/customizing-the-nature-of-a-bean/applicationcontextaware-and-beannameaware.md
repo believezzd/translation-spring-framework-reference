@@ -20,4 +20,5 @@ public interface BeanNameAware {
 }
 ```
 
+这个回调方法在正常属性被注入后，但是在初始化回调方法被调用之前， 例如InitializingBean的afterPropertiesSet或init方法。
 
