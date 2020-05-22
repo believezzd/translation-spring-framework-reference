@@ -24,7 +24,7 @@ ApplicationContext自动的探测bean被配置元数据定义成实现BeanPostPr
 
 > **BeanPostProcessors and AOP auto-proxying**
 
-> 
+> 实现BeanPostProcessor接口的类在容器中是特殊对待的。所有的BeanPostProcessors和这些bean引用的会在启动时直接初始化，作为ApplicationContext的特殊启动部分。然后，所有的BeanPostProcessors被注册并且应用于容器中的其他bean。因为AOP自动代理实现了BeanPostProcessor自身，所以BeanPostProcessors和他依赖的bean不适合于自动代理，不要在切面中包含他们
 
 > 
 
