@@ -1,3 +1,5 @@
+###### Collection merging
+
 spring容器也支持集合的合并。应用开发者可以定义parent-style的list、map、set或props元素，并且也可定义list、map、set和props元素从父集合中继承或覆盖。子集合的值是子集合和父集合的合并，其中子集合会覆盖父集合的内容。
 
 这个章节的合并讨论了有关父子bean的问题。如果读者不清楚父子bean可以先阅读后续的7.7节。
