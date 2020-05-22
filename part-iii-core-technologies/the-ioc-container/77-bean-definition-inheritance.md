@@ -41,3 +41,7 @@ parent="inheritedTestBeanWithoutClass" init-method="initialize">
 ```
 
 上面的父bean是不可以被实例化的因为他不完整并且也明确定义了他是抽象的。当一个像这样定义的抽象，通常作为一个纯粹的模板bean定义作为一个父bean来服务子bean。如果试图使用这样的父bean，或作为另一个bean属性的指向或者使用getBean方法使用父bean的id会返回错误。同样，容器内部的preInstantiateSingletons方法会忽略抽象bean的定义。
+
+>**Note**
+
+>ApplicationContext默认提前初始化所有单例bean。然而，这是重要的（至少对于单例bean），那就是你使用了bean的定义希望他作为一个模板，并且这个定义中含有class属性，你必须保证这是一个抽象的定义bean，否则应用上文将会尝试提前初始化抽象bean。
