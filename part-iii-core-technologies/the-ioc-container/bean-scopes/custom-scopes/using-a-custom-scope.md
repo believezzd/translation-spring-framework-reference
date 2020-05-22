@@ -27,7 +27,7 @@ beanFactory.registerScope("thread", threadScope);
 <bean id="..." class="..." scope="thread">
 ```
 
-自定义的 Scope 实现，不仅仅可以使用编程的方式进行注册。你可以使用声明式的 Scope 注册，使用 CustomScopeconfigurer 类
+自定义的 Scope 实现，不仅仅可以使用编程的方式进行注册。你可以使用声明式的 Scope 注册，使用 CustomScopeconfigurer 类:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
