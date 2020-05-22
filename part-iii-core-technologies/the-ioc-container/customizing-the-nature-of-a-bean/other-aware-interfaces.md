@@ -21,7 +21,7 @@ ResourceLoaderAware | Configured loader for low-level access to resources | Chap
 ServletConfigAware | Current ServletConfig the container runs in. Valid only in a web-aware Spring ApplicationContext | Chapter 22, Web MVC framework
 ServletContextAware | Current ServletContext thecontainer runs in. Valid only in a web-aware Spring ApplicationContext | Chapter 22, Web MVC framework
 
-
+再次注意，使用这些接口会使得你的代码和Spring API耦合，并且不符合反向控制的方式。建议基础组件需要编程访问容器时使用。
 
 
 
