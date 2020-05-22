@@ -28,6 +28,6 @@ ApplicationContext自动的探测bean被配置元数据定义成实现BeanPostPr
 
 > 对于任何这样的bean，你应该查看日志会看到“Bean foo不适合被所有的BeanPostProcessor接口处理（例如，不适合自动代理）”
 
-> 
+> 注意如果你的baen使用自动注入或@Resource（在自动注入时快速失败）来注入了你的BeanPostProcessor，spring或许访问不确定的bean在寻找类型匹配依赖是，会使得自动代理或其他类型的post-processing失效。例如，你使用@Resource注解依赖属性或set方法并没有直接和bean的名称和没有使用name属性，spirng将会通过匹配类型来访问其他的bean。
 
 以下的例子展示了如何编程、注册和使用 BeanPostProcessors 在 ApplicationContext 中
