@@ -1,3 +1,5 @@
+##### Scoped beans as dependencies
+
 spring的IOC容器不只管理你bean的实例化，也包括注入依赖。如果你希望将一个request的bean注入到另一个长期存活的bean，你可以选择使用AOP代理来替代范围的bean。你需要注入一个暴露相同接口的代理object作为范围的object，可以从相关范围（例如http请求中）检索实际的目标object并且对目标object方法进行委托。
 
 >note
