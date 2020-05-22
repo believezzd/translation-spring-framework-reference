@@ -29,6 +29,9 @@ beanFactory.registerScope("thread", threadScope);
 
 自定义的 Scope 实现，不仅仅可以使用编程的方式进行注册。你可以使用声明式的 Scope 注册，使用 CustomScopeconfigurer 类：
 
+```
+<ss>sdf
 
+```
 
 我的
