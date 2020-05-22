@@ -40,4 +40,14 @@ public interface SmartLifecycle extends Lifecycle, Phased {
 }
 ```
 
+当启动的时候，object在低等级的phase会先启动，当关闭的时候正好顺序相反。然而，实现SmartLifecycle接口getPhase方法返回Integer的最小值将会最先启动，然后最后一个结束。另一方面，phase的值如果是Integer的最大值则暗示着这个对象将会最后一个启动并且第一个停止（类似于他依赖骐达程序运行）。当考虑到phase的值，需要知道默认的值对于普通的生命周期对象并没有实现SmartLifecycle接口的对象来说是0。然而，任何负数的phase将意味着这个object将比正常的组件提前启动（并且在他们之后体质），如果是正数则反之。
+
+你知道定义了SmartLifecycle可以接受一个回调。任何实现必须先回调run方法在停止过程完成后。这可以保证异步的停止当有必要的时候由于默认实现了LifecycleProcessor接口、DefaultLifecycleProcessor接口，将会等待他的超时为了一组对象可以在自己的phase中被回调。默认每个phase的超时是30秒。你可以覆盖默认的生命周期处理器实例通过定义名字为lifecycleProcessor的bean在上下文中。如果你只想改变超时，你可以按照下面的定义就足够了。
+
+```
+<bean id="lifecycleProcessor" class="org.springframework.context.support.DefaultLifecycleProcessor">
+    <!-- timeout value in milliseconds -->
+    <property name="timeoutPerShutdownPhase" value="10000"/>
+</bean>
+```
 
