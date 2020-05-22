@@ -23,3 +23,26 @@ public class DefaultBlogService implements BlogService {
     }
 }
 ```
+
+```
+<beans default-init-method="init">
+    <bean id="blogService" class="com.foo.DefaultBlogService">
+        <property name="blogDao" ref="blogDao" />
+    </bean>
+</beans>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
