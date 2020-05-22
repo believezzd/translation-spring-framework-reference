@@ -2,7 +2,8 @@
 
 spring的IOC容器不只管理你bean的实例化，也包括注入依赖。如果你希望将一个request的bean注入到另一个长期存活的bean，你可以选择使用AOP代理来替代范围的bean。你需要注入一个暴露相同接口的代理object作为范围的object，可以从相关范围（例如http请求中）检索实际的目标object并且对目标object方法进行委托。
 
->note
+>**Note**
+
 >你也可以使用<aop:scoped-proxy/>在单例bean的定义之间，获得他的引用通过可以序列化的中间代理并且通过反序列化重新获得目标的bean实例。
 >当在原型bean中定义<aop:scoped-proxy/>时，每个对共享代理的方法调用将会指向新创建的目标实例然后在被转发。
 >并且，范围代理并不是唯一的生命期安全的访问shorter范围bean的方法。你也可以简单定义你的注入点（例如构造器或set方法注入或自动注入）作为ObjectFactory<MyTargetBean>，允许调用getObject来获得当前实例在你需要的任何时间——而不再需要保持一个实例或分开存储一个实例。
