@@ -13,3 +13,7 @@ BeanPostProcessor接口定义了回调方法，你可以实现这个接口并提
 >需要改变实际bean的定义（例如，定义bean的蓝图），你需要根据需要像章节7.8.2“使用BeanPostProcessor来自定义配置元数据”的描述一样来使用BeanPostProcessor。
 
 org.springframework.beans.factory.config.BeanPostProcessor接口有两个回调方法。当一个类被注册为一个容器的post-processor，对于这个容器创建的所有bean，每个bean的初始化方法（例如InitializingBean的afterPropertiesSet方法和任何被定义的init方法）结束前，在容器初始化方法之后，post-processor都会从容器中获得回调方法。post-processor可以对bean的实例做任何处理，包括忽略回调方法的完成。一个bean的post-processor通常检查回调接口或使用代理来包裹bean。一些spring的AOP基础组件类实现了bean的post-processor用于处理代理包裹逻辑。
+
+
+
+
