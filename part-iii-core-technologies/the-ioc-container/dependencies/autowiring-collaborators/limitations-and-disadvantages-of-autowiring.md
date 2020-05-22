@@ -16,7 +16,7 @@
 
 * 使用明确指定而不再使用自动装配。
 
-* 避免在bean定义中使用自动装配的时候使用autowire-candidate属性并将其属性值设置为false，如下节所描述的那样。
+* 避免在bean定义中使用自动装配的时候将 autowire-candidate 属性设置为false，如下节所描述的那样。
 
 * 设置<bean/>的primary属性，指定将一个bean设置为primary candidate.
 
