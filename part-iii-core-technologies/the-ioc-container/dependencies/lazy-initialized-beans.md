@@ -1,4 +1,4 @@
-#### Lazy-initialzed beans
+#### Lazy-initialized beans
 
 默认情况下，ApplicationContext的实现会在初始化的过程中初始化所有的单例bean。通常，提前初始化是好的，因为配置或环境的问题会被直接发现，而不是在几小时或几天以后。当你不需要这样的特性时，你可以阻止单例bean的提前初始化通过设置bean为延迟加载。一个延迟加载bean会通知容器在第一次使用的时候创建实例而不是初始化的时候。
 
