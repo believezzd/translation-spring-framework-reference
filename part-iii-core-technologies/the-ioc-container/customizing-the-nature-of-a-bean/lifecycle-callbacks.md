@@ -1,3 +1,5 @@
+#### Lifecycle callbacks
+
 为了与容器管理的bean的生命周期交互，你可以实现spring的InitializingBean和DisposableBean接口。容器调用afterPropertiesSet方法用于前者并且调用destroy方法用于后者允许bean表现特定的行为在初始化和销毁时。
 
 >tip
