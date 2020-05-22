@@ -7,16 +7,16 @@
 Name | Injected Depend | Explained in...
 -- | :--: |--
 ApplicationContextAware | Declaring ApplicationContext | the section called “ApplicationContextAware and BeanNameAware”
-ApplicationEventPublisherAEwvaenrte | b | c
-BeanClassLoaderAware | b | c
+ApplicationEventPublisherAware | event publisher of the enclosing ApplicationContext | Section 7.15, “Additional capabilities of the ApplicationContext”
+BeanClassLoaderAware | Class loader used to load the bean classes. | the section called “Instantiating beans”
 BeanFactoryAware | b | c
 BeanNameAware | b | c
 BootstrapContextAware | b | c
 LoadTimeWeaverAware | b | c
-MessageSourceAware | b | c
-NotificationPublisherAwareSpring | Spring JMX notification publisher | Section 31.7, “Notifications” PortletConfigAware | Current PortletConfig the container runs in. Valid only in a web-aware Spring ApplicationContext | Chapter 25, Portlet MVC Framework
-PortletContextAware | Current PortletContext the container runs in. Valid only in a web-aware Spring
-ApplicationContext | Chapter 25, Portlet MVC Framework
+MessageSourceAware | Configured strategy for resolving messages (with support for parametrization and internationalization) | Section 7.15, “Additional capabilities of the ApplicationContext”
+NotificationPublisherAware | Spring JMX notification publisher | Section 31.7, “Notifications” 
+PortletConfigAware | Current PortletConfig the container runs in. Valid only in a web-aware Spring ApplicationContext | Chapter 25, Portlet MVC Framework
+PortletContextAware | Current PortletContext the container runs in. Valid only in a web-aware Spring ApplicationContext | Chapter 25, Portlet MVC Framework
 ResourceLoaderAware | Configured loader for low-level access to resources | Chapter 8, Resources
 ServletConfigAware | Current ServletConfig the container runs in. Valid only in a web-aware Spring ApplicationContext | Chapter 22, Web MVC framework
 ServletContextAware | Current ServletContext thecontainer runs in. Valid only in a web-aware Spring ApplicationContext | Chapter 22, Web MVC framework
