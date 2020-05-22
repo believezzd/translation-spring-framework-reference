@@ -22,8 +22,6 @@
 
 * 通过基于注解的配置实现更加细粒度的控制，as described in Section 7.9,“Annotation-based container configuration”
 
-* 
-
 
 
 
