@@ -30,8 +30,32 @@ beanFactory.registerScope("thread", threadScope);
 自定义的 Scope 实现，不仅仅可以使用编程的方式进行注册。你可以使用声明式的 Scope 注册，使用 CustomScopeconfigurer 类：
 
 ```
-<ss>sdf
+<?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/aop
+    https://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">
+        <property name="scopes">
+        <map>
+        <entry key="thread">
+    <bean class="org.springframework.context.support.SimpleThreadScope"/>
+    </entry>
+    </map>
+    </property>
+    </bean>
+    <bean id="bar" class="x.y.Bar" scope="thread">
+    <property name="name" value="Rick"/>
+    <aop:scoped-proxy/>
+    </bean>
+    <bean id="foo" class="x.y.Foo">
+    <property name="bar" ref="bar"/>
+    </bean>
+    </beans>
 ```
 
 我的
