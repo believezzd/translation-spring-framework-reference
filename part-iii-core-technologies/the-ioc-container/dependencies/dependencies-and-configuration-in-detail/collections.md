@@ -1,3 +1,5 @@
+##### Collections
+
 在<list/>、<set/>、<map/>和<props/>元素中，你可以设置java集合类型的属性和参数，例如List、Set、Map和Properties
 
 ```
