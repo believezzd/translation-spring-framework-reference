@@ -1,3 +1,5 @@
+#### Autowiring collaborators
+
 spring可以自动装配相关的bean。你可以通过检验ApplicationContext的内容来允许spring自动为你的bean处理合作关系。自动装配有以下的优点：
 
 * 自动装配可以显著减少对属性的定义或配置构造器参数。（其他的机制例如bean模板在本章中讨论也是有价值的）
