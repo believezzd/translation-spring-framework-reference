@@ -1,3 +1,4 @@
 #### ApplicationContextAware and BeanNameAware
 
 当ApplicationContext创建了一个object实例实现了org.springframework.context.ApplicationContextAware接口，那么这个实例提供了ApplicationContext的一个引用。
+
