@@ -21,3 +21,7 @@ ApplicationContext自动的探测bean被配置元数据定义成实现BeanPostPr
 > **Programmatically registering BeanPostProcessors**
 
 >建议BeanPostProcessor的注册方法是通过ApplicationContext的自动探测（同上面描述的），他也可以通过ConfigurableBeanFactory使用addBeanPostProcessor方法来编程实现。如果需要评价条件逻辑在注册之前或在继承的上下文中拷贝bean的post processor时是很有用的。注意，然而编程添加BeanPostProcessors不可以respect Ordered接口。这里注册的顺序决定了运行的顺序。注意即使明确定义了顺序，编程注册的BeanPostProcessors比自动探测注册的BeanPostProcessors要提早运行。
+
+> **BeanPostProcessors and AOP auto-proxying**
+
+> 
