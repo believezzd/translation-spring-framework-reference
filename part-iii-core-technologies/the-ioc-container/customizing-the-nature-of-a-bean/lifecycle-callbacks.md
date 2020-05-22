@@ -5,6 +5,7 @@
 >**Tip**
 
 >JSP-250中的@PostConstruct和@PreDestroy注解是现代spring应用中比较好的方式用于回调生命周期方法。使用这样的注解意味着你的bean不在和spring中特定饿接口绑定。详见7.9.8章节“@PostConstruct和@PreDestroy”
+
 >如果你不想使用JSR-250注解但是你寻找其他解耦的方式可以考虑使用init-method和destroy-method在对象的定义元数据的时候。
 
 在内部，spring框架使用BeanPostProcessor的实现来处理回调的接口，她可以找到并调用合适的方法。如果你需要自定义特性或其他生命周期的行为，sping没有提供直接的方式调用，你可以实现BeanPostProcessor类。详见7.8章节，“Container Extension Points”。
