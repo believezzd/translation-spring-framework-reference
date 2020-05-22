@@ -18,3 +18,8 @@ Spring 2.5时代，总共有 3 种可选的方法用来控制 bean 的 生命周
 * 实现 DisposableBean 接口的 destroy() 方法
 * 自定义的 destroy() 方法
 
+
+
+
+
+
