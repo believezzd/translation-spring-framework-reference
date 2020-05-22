@@ -32,7 +32,13 @@ public class DefaultBlogService implements BlogService {
 </beans>
 ```
 
+当前在 <bean/> 中的 default-init-method 属性配置导致 Spring 容器识别 init 方法，把其当成初始化回调。当 bean 创建且组装好后，如果 bean 有这个方法，这个方法会在适当的时机被回调。
 
+配置销毁回调也是差不多的，通过使用在 <beans/> 上的 default-destory-method 属性。
+
+如果已经存在的类已经有了不同于规范命名的回调方法，可以使用 init-method 和 desotry-method 来重写默认配置
+
+spring容器可以保证一个配置的初始化回调方法会在所有依赖注入完成后被调用。初始化方法作为原始bean的引用被调用，也就意味着AOP拦截器还没有应用于这个bean。目标首先被创建，然后AOP代理的拦截链才会被应用。如果目标bean和代理是分开定义的，你的代码可以通过代理与原始目标bean产生联系。因此，将一个拦截器用于初始化方法是相悖的，因为这样做会导致目标bean的生命周期和他的代理或拦截器相互耦合并且会留下莫名的语义当你的代码和原始目标对象相关联时。
 
 
 
