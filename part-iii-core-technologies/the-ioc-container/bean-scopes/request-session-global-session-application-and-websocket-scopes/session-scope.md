@@ -1,3 +1,5 @@
+##### Session scope
+
 考虑下面xml配置的bean的定义:
 
 ```
