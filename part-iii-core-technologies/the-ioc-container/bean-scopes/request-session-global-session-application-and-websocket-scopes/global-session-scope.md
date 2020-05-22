@@ -1,3 +1,5 @@
+##### Global session scope
+
 考虑下面的bean定义:
 
 ```
