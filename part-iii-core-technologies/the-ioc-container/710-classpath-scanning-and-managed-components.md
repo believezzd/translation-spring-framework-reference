@@ -1,0 +1,1 @@
+### 7.10 ClassPath scanning and managed components
