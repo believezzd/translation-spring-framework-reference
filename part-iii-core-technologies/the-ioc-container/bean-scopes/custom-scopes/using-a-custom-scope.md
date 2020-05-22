@@ -59,4 +59,35 @@ beanFactory.registerScope("thread", threadScope);
 </beans>
 ```
 
-我的
+>```
+<?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/aop
+    https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">
+        <property name="scopes">
+        <map>
+        <entry key="thread">
+    <bean class="org.springframework.context.support.SimpleThreadScope"/>
+    </entry>
+    </map>
+    </property>
+    </bean>
+    <bean id="bar" class="x.y.Bar" scope="thread">
+    <property name="name" value="Rick"/>
+    <aop:scoped-proxy/>
+    </bean>
+    <bean id="foo" class="x.y.Foo">
+    <property name="bar" ref="bar"/>
+    </bean>
+    </beans>
+```
+
+>**Note**
+
+> 
