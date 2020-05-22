@@ -1,3 +1,5 @@
+##### Inner beans
+
 在<property/>或<constructor-arg/>元素中的bean元素可以叫做内部bean。
 
 ```
