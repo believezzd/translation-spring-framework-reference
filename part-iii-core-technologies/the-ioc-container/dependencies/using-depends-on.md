@@ -18,5 +18,6 @@
 <bean id="accountDao" class="x.y.jdbc.JdbcAccountDao" />
 ```
 
->Note
+>**Note**
+
 >在bean定义中的depends-on属性，可以指明依赖的初始化时间，同时在单例情况下会破坏依赖先后的销毁时间。定义depends-on的bean会先销毁。因此depends-on可以控制关闭的顺序。
