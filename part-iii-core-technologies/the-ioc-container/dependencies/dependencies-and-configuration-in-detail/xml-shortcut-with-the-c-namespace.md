@@ -29,7 +29,8 @@ c命名空间使用相同的规范和p命名空间（后面使用ref作为bean�
 <bean id="foo" class="x.y.Foo" c:_0-ref="bar" c:_1-ref="baz"/>
 ```
 
->Note
+>**Note**
+
 >遵循xml的语法，index的表示前需要_作为xml的属性名而不能以数字开头（尽管某些ide支持这种写法）
 
 在实际中，构造器注入在匹配参数相当有效除非确实很需要他，我们推荐使用name符号在你的配置中。
