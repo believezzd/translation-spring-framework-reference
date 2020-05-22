@@ -10,6 +10,7 @@ class="org.springframework.beans.TestBean">
     <property name="name" value="parent"/>
     <property name="age" value="1"/>
 </bean>
+
 <bean id="inheritsWithDifferentClass"
 class="org.springframework.beans.DerivedTestBean"
 parent="inheritedTestBean" init-method="initialize">
@@ -17,3 +18,9 @@ parent="inheritedTestBean" init-method="initialize">
     <!-- the age property value of 1 will be inherited from parent -->
 </bean>
 ```
+
+如果子bean不定义class属性，则使用其父bean的class定义，当然也可以覆盖父bean的定义。在下面的例子中，子bean的类必须和父bean相匹配，也就是必须可以接收父bean的属性值。
+
+
+
+
