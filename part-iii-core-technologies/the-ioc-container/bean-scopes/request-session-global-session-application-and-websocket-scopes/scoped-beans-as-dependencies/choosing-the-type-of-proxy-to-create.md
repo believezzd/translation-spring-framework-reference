@@ -1,3 +1,5 @@
+###### Choosing the type of proxy to create
+
 默认的，spring容器为使用<aop:scoped-proxy/>标记的bean创建代理，基于cglib来创建代理。
 
 >note
