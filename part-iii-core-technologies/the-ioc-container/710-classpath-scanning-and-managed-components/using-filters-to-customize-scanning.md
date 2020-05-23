@@ -38,5 +38,7 @@ expression="org.springframework.stereotype.Repository"/>
 </beans>
 ```
 
+>**Note**
 
+>你可以在注解上设置useDefaultFilters=false来关闭默认的过滤器或在component-scan元素上使用use-default-filters="false"作为元素属性。这将会关闭对使用@Component、@Repository、@Service、 @Controller和@Configuration注解的自动扫描
 
