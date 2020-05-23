@@ -133,7 +133,7 @@
       * [Customizing beans using a BeanPostProcessor](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-beans-using-a-beanpostprocessor.md)
         * [Example: Hello World, BeanPostProcessor-style](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-beans-using-a-beanpostprocessor/example-hello-world-beanpostprocessor-style.md)
         * [Example: The RequireAnnotationBeanPostProcessor](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-beans-using-a-beanpostprocessor/example-the-requireannotationbeanpostprocessor.md)
-      * [Customizing instantiation logic with a FactoryBean](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-instantiation-logic-with-a-factorybean.md)
+      * [Customizing configuration metadata with BeanFactoryPostProcessor](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-instantiation-logic-with-a-factorybean.md)
         * [Example: the Class name substitution PropertyPlaceholderConfigurer](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-instantiation-logic-with-a-factorybean/example-the-class-name-substitution-propertyplaceholderconfigurer.md)
         * [Example: the PropertyOverrideConfigurer](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-instantiation-logic-with-a-factorybean/example-the-propertyoverrideconfigurer.md)
     * [7.9 Annotation-based container configuration](part-iii-core-technologies/the-ioc-container/79-annotation-based-container-configuration.md)
