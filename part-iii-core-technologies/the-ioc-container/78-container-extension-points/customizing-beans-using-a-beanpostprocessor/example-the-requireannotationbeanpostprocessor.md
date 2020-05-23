@@ -1,1 +1,3 @@
 ##### Example: The RequireAnnotationBeanPostProcessor
+
+使用回调接口或注解连接自定义的BeanPostProcessor实现是一种扩展spring的IOC容器的通常做法。一个例子就是spring的RequiredAnnotationBeanPostProcessor，BeanPostProcessor的实现是spring发行版允许javabean属性可以通过注解来标记并实际依赖于一个值.

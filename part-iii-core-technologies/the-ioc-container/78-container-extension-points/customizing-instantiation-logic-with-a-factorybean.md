@@ -1,1 +1,19 @@
 #### Customizing instantiation logic with a FactoryBean
+
+下一个扩展点是org.springframework.beans.factory.config.BeanFactoryPostProcessor。这个接口的语义和BeanPostProcessor类似，但是有一点不同：BeanFactoryPostProcessor操作的是bean的配置元数据，也就是说，spring的IOC容器语序一个BeanFactoryPostProcessor来读取配置元数据并且潜在的改变他在容器初始化任何bean之前，和BeanFactoryPostProcessors不同。
+
+你可以配置多个BeanFactoryPostProcessors，并且你可以控制这些BeanFactoryPostProcessors在执行设置的顺序。然而，只有在实现了Ordered接口后才可以改变顺序。如果你实现自己的BeanFactoryPostProcessors，你也应该考虑实现Ordered接口。参见BeanFactoryPostProcessors和Ordered接口的javadocs来了解详情。
+
+>**Note**
+
+> 如果你想要改变实际bean的实例（例如，从配置元数据中创建的object），那你需要使用BeanPostProcessor（在上面7.8.1章节中描述“使用BeanPostProcessor”自定义bean”）。用BeanFactoryPostProcessor和bean的实例一起在技术上是可行的（例如，使用BeanFactory.getBean），这样做会导致bean的提前初始化，违反标准容器的生命周期。这也会导致低效率例如绕过bean的后续处理。
+
+> BeanFactoryPostProcessors的作用范围是每个容器。只和你使用的容器的继承关系有关。如果你在一个容器中定义了BeanFactoryPostProcessor，他将会只在那个特定的容器中起作用。一个容器中的BeanFactoryPostProcessor不会对另一个容器起作用，即便两个容器是相同的继承关系。
+
+定义在ApplicationContext的一个post-processor的bean会自动执行，以便于改变容器中的配置元数据。spring包括一系列已经定义好的bean factory post-processors，例如PropertyOverrideConfigurer和PropertyPlaceholderConfigurer。一个自定义BeanFactoryPostProcessor也可以被使用，例如注册自定义属性编辑器。
+
+
+
+
+
+
