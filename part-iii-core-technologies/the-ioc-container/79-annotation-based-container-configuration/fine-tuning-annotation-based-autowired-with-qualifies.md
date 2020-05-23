@@ -56,4 +56,11 @@ https://www.springframework.org/schema/context/spring-context.xsd">
 </beans>
 ```
 
+对于一个后备匹配，bean的名字作为默认的qualifier值来处理。你可以使用id为main定义一个bean来代替内置的qualifier元素，也可以实现相同的匹配结果。然而，尽管你可以使用这种规范通过name来引用bean，@Autowired实际上是使用可选语义限定符实现类型的注入。这就意味着，即使是bean的名字的后备，也缩小了类型匹配的范围，而且不用特意指明bean的id。有意义的qualifier的值如main、EMEA或persistent，表达一个依赖于bean的id的组件的字符串，可以自动生成在上面例子中的那个匿名的bean的定义。
+
+qualifier也可以应用于集合，就像上面讨论的那样，例如，Set<MovieCatalog>。在这个例子中，所有匹配的bean都根据定义的qualifier来作为一个集合注入。这意味着qualifier并不一定是唯一的，他们更像是用于过滤的条件。例如，你可以定义多个MovieCatalog的bean使用相同的qualifier值为action，所有的这些都会注入@Qualifier("action")修饰的Set<MovieCatalog>。
+
+
+
+
 
