@@ -12,6 +12,12 @@
 
 定义在ApplicationContext的一个post-processor的bean会自动执行，以便于改变容器中的配置元数据。spring包括一系列已经定义好的bean factory post-processors，例如PropertyOverrideConfigurer和PropertyPlaceholderConfigurer。一个自定义BeanFactoryPostProcessor也可以被使用，例如注册自定义属性编辑器。
 
+ApplicationContext自动探测部署的并且实现BeanFactoryPostProcessor接口的bean。他会在恰当的时候使用这些bean。你可以部署这些post-processor的bean作为你需要的其他bean。
+
+>**Note**
+
+> 使用BeanPostProcessors，你不需要将BeanFactoryPostProcessors配置成延迟启动。如果没有bean引用Bean(Factory)PostProcessor，post-processor将不会获得初始化。因此设置他为延迟初始化会被忽略并且Bean(Factory)PostProcessor将会被实例化如果你设置了default-lazy-init属性为true在你定义beans时。
+
 
 
 

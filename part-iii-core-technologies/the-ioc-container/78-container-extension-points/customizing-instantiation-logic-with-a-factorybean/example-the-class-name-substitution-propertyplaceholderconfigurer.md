@@ -1,0 +1,1 @@
+##### Example: the Class name substitution PropertyPlaceholderConfigurer
