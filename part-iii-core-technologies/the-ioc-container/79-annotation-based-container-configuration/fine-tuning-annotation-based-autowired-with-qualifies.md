@@ -58,7 +58,110 @@ https://www.springframework.org/schema/context/spring-context.xsd">
 
 对于一个后备匹配，bean的名字作为默认的qualifier值来处理。你可以使用id为main定义一个bean来代替内置的qualifier元素，也可以实现相同的匹配结果。然而，尽管你可以使用这种规范通过name来引用bean，@Autowired实际上是使用可选语义限定符实现类型的注入。这就意味着，即使是bean的名字的后备，也缩小了类型匹配的范围，而且不用特意指明bean的id。有意义的qualifier的值如main、EMEA或persistent，表达一个依赖于bean的id的组件的字符串，可以自动生成在上面例子中的那个匿名的bean的定义。
 
-qualifier也可以应用于集合，就像上面讨论的那样，例如，Set<MovieCatalog>。在这个例子中，所有匹配的bean都根据定义的qualifier来作为一个集合注入。这意味着qualifier并不一定是唯一的，他们更像是用于过滤的条件。例如，你可以定义多个MovieCatalog的bean使用相同的qualifier值为action，所有的这些都会注入@Qualifier("action")修饰的Set<MovieCatalog>。
+qualifier也可以应用于类型集合，就像上面讨论的那样，例如，Set<MovieCatalog>。在这个例子中，所有匹配的bean都根据定义的qualifier来作为一个集合注入。这意味着qualifier并不一定是唯一的，他们更像是用于过滤的条件。例如，你可以定义多个MovieCatalog的bean使用相同的qualifier值为action，所有的这些都会注入@Qualifier("action")修饰的Set<MovieCatalog>。
+
+>**Tip**
+
+> 让限定符值根据目标bean名称进行选择，在类型匹配候选项中，在注入点甚至不需要@Qualifier注解。如果没有其他解决办法指示符(例如限定词或主标记)，对于非唯一依赖情况，Spring将将注入点名(即字段名或参数名)与目标bean名相匹配并选择同名的候选人(如果有的话)。
+
+你可以创建自定义的qualifier注解。简单的定义一个注解并在定义中使用@Qualifier注解。
+
+```
+@Target({ElementType.FIELD, ElementType.PARAMETER})
+@Retention(RetentionPolicy.RUNTIME)
+@Qualifier
+public @interface Genre {
+    String value();
+}
+```
+
+然后你使用自定义的qualifier注解来自动注入属性和参数：
+
+```
+public class MovieRecommender {
+
+    @Autowired
+    @Genre("Action")
+    private MovieCatalog actionCatalog;
+    
+    private MovieCatalog comedyCatalog;
+    
+    @Autowired
+    public void setComedyCatalog(@Genre("Comedy") MovieCatalog comedyCatalog) {
+        this.comedyCatalog = comedyCatalog;
+    }
+    // ...
+}
+```
+
+下一步，提供候选bean的定义信息。在bean元素下使用qualifier子元素定义类型和参数来匹配你自定义的注解。类型匹配注解类名的全限定名。或者，作为规范在不存在name冲突是，你可以使用类名。在下面的例子中描述了这两种方式。
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+    
+    <bean class="example.SimpleMovieCatalog">
+        <qualifier type="Genre" value="Action"/>
+        <!-- inject any dependencies required by this bean -->
+    </bean>
+    <bean class="example.SimpleMovieCatalog">
+        <qualifier type="example.Genre" value="Comedy"/>
+        <!-- inject any dependencies required by this bean -->
+    </bean>
+    
+    <bean id="movieRecommender" class="example.MovieRecommender"/>
+</beans>
+```
+
+在7.10节中，“类路径扫描和管理组件”，你会看到基于注解的来提供xml中的qualifier元数据。见7.10.8节，“使用注解提供qualifier元数据”。
+
+在一些例子中，可以运行使用注解而不指定value。注解可以服务于通用的目标会更加有用，而且可以跨不同类型的依赖。例如，你可以提供线下的catalog并且可以在没有Internet的时候可用。首先定义简单的注解：
+
+```
+@Target({ElementType.FIELD, ElementType.PARAMETER})
+@Retention(RetentionPolicy.RUNTIME)
+@Qualifier
+public @interface Offline {
+}
+```
+
+然后用注解修饰field或property用于自动注入：
+
+```
+public class MovieRecommender {
+    @Autowired
+    @Offline
+    private MovieCatalog offlineCatalog;
+    // ...
+}
+```
+
+现在bean的定义中只需要声明qualifier的类型就可以：
+
+```
+<bean class="example.SimpleMovieCatalog">
+    <qualifier type="Offline"/>
+    <!-- inject any dependencies required by this bean -->
+</bean>
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
