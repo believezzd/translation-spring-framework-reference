@@ -153,6 +153,20 @@ public class SimpleMovieLister {
 }
 ```
 
+你也可以使用@Autowired来修饰常用的依赖：BeanFactory、ApplicationContext、Environment、ResourceLoader、ApplicationEventPublisher和MessageSource。这些即可和他们的子接口如ConfigurableApplicationContext、ResourcePatternResolver都可以被自动注入而不需要特殊的设置。
 
+```
+public class MovieRecommender {
+    @Autowired
+    private ApplicationContext context;
+    
+    public MovieRecommender() {
+    }
+    // ...
+}
+```
 
+>**Note**
+
+>@Autowired、@Inject、@Resource和@Value注解通过spring的BeanPostProcessor实现来处理，也就意味着你不能使用这些注解在你自己的BeanPostProcessor或BeanFactoryPostProcessor类型中。这些类型必须通过xml或用@Bean来修饰。
 
