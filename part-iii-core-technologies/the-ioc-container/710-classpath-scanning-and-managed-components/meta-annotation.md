@@ -31,7 +31,27 @@ public @interface SessionScope {
 }
 ```
 
+@SessionScope 可以不用声明 proxyMode 来使用：
 
+```
+@Service
+@SessionScope
+public class SessionScopedService {
+    // ...
+}
+```
+
+或者覆盖proxyMode的值如下
+
+```
+@Service
+@SessionScope(proxyMode = ScopedProxyMode.INTERFACES)
+public class SessionScopedUserService implements UserService {
+    // ...
+}
+```
+
+详见spring注解编程模型
 
 
 
