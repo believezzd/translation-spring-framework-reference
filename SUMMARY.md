@@ -147,6 +147,8 @@
       * [@Resource](part-iii-core-technologies/the-ioc-container/79-annotation-based-container-configuration/resource.md)
       * [@PostConstruct and @PreDestroy](part-iii-core-technologies/the-ioc-container/79-annotation-based-container-configuration/postconstruct-and-predestroy.md)
     * [7.10 ClassPath scanning and managed components](part-iii-core-technologies/the-ioc-container/710-classpath-scanning-and-managed-components.md)
+      * [@Componet and further stereotype annotation](part-iii-core-technologies/the-ioc-container/710-classpath-scanning-and-managed-components/componet-and-further-stereotype-annotation.md)
+      * [Meta-annotation](part-iii-core-technologies/the-ioc-container/710-classpath-scanning-and-managed-components/meta-annotation.md)
     * [7.11 Using JSR 330 Standard Annotation](part-iii-core-technologies/the-ioc-container/711-using-jsr-330-standard-annotation.md)
     * [7.12 Java-based container configuration](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration.md)
     * [7.13 Environment abstraction](part-iii-core-technologies/the-ioc-container/713-environment-abstraction.md)
