@@ -153,15 +153,89 @@ public class MovieRecommender {
 </bean>
 ```
 
+你也可以自定义qualifier注解来接受名字属性来代替简单的value属性。如果多个属性被定义在field或参数上，则一个bean定义必须满足所有的属性值才会被考虑自动注入。例如，考虑下面的这个注解的例子：
 
+```
+@Target({ElementType.FIELD, ElementType.PARAMETER})
+@Retention(RetentionPolicy.RUNTIME)
+@Qualifier
+public @interface MovieQualifier {
+    String genre();
+    Format format();
+}
+```
 
+Format这个枚举是这样定义的：
 
+```
+public enum Format {
+    VHS, DVD, BLURAY
+}
+```
 
+需要被自动注入的自定义qualifier必须包含两个属性：genre和format。
 
+```
+public class MovieRecommender {
+    @Autowired
+    @MovieQualifier(format=Format.VHS, genre="Action")
+    private MovieCatalog actionVhsCatalog;
+    @Autowired
+    @MovieQualifier(format=Format.VHS, genre="Comedy")
+    private MovieCatalog comedyVhsCatalog;
+    @Autowired
+    @MovieQualifier(format=Format.DVD, genre="Action")
+    private MovieCatalog actionDvdCatalog;
+    @Autowired
+    @MovieQualifier(format=Format.BLURAY, genre="Comedy")
+    private MovieCatalog comedyBluRayCatalog;
+    // ...
+}
+```
 
+最后，bean定义应该包含匹配的限定符值。这个例子还演示了可以使用bean元属性来代替 <qualifier/> 子元素。如果可以，qualifier和他的属性应该优先，但是自动注入策略考虑meta标签中提供的值，如果没有这样的qualifier被提供，例如下面例子中两个bean的定义。
 
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+https://www.springframework.org/schema/context/spring-context.xsd">
 
-
+    <context:annotation-config/>
+    
+    <bean class="example.SimpleMovieCatalog">
+        <qualifier type="MovieQualifier">
+            <attribute key="format" value="VHS"/>
+            <attribute key="genre" value="Action"/>
+        </qualifier>
+        <!-- inject any dependencies required by this bean -->
+    </bean>
+    
+    <bean class="example.SimpleMovieCatalog">
+        <qualifier type="MovieQualifier">
+            <attribute key="format" value="VHS"/>
+            <attribute key="genre" value="Comedy"/>
+        </qualifier>
+        <!-- inject any dependencies required by this bean -->
+    </bean>
+    
+    <bean class="example.SimpleMovieCatalog">
+        <meta key="format" value="DVD"/>
+        <meta key="genre" value="Action"/>
+        <!-- inject any dependencies required by this bean -->
+    </bean>
+    
+    <bean class="example.SimpleMovieCatalog">
+        <meta key="format" value="BLURAY"/>
+        <meta key="genre" value="Comedy"/>
+        <!-- inject any dependencies required by this bean -->
+    </bean>
+</beans>
+```
 
 
 
