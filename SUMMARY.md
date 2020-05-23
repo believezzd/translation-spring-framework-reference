@@ -135,7 +135,7 @@
         * [Example: The RequireAnnotationBeanPostProcessor](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-beans-using-a-beanpostprocessor/example-the-requireannotationbeanpostprocessor.md)
       * [Customizing configuration metadata with a BeanFactoryPostProcessor](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-configuration-metadata-with-a-beanfactorypostprocessor.md)
         * [Example: the Class name substitution PropertyPlaceholderConfigurer](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-configuration-metadata-with-a-beanfactorypostprocessor/example-the-class-name-substitution-propertyplaceholderconfigurer.md)
-        * Example: the PropertyOverrideConfigurer
+        * [Example: the PropertyOverrideConfigurer](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-configuration-metadata-with-a-beanfactorypostprocessor/example-the-propertyoverrideconfigurer.md)
       * [Customizing instantiation logic with a FactoryBean](part-iii-core-technologies/the-ioc-container/78-container-extension-points/customizing-instantiation-logic-with-a-factorybean.md)
     * [7.9 Annotation-based container configuration](part-iii-core-technologies/the-ioc-container/79-annotation-based-container-configuration.md)
     * [7.10 ClassPath scanning and managed components](part-iii-core-technologies/the-ioc-container/710-classpath-scanning-and-managed-components.md)
