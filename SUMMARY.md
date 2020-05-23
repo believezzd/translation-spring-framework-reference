@@ -145,6 +145,7 @@
       * [Using generics as autowiring qualifiers](part-iii-core-technologies/the-ioc-container/79-annotation-based-container-configuration/using-generics-as-autowiring-qualifiers.md)
       * [CustomAutowireConfigurer](part-iii-core-technologies/the-ioc-container/79-annotation-based-container-configuration/customautowireconfigurer.md)
       * [@Resource](part-iii-core-technologies/the-ioc-container/79-annotation-based-container-configuration/resource.md)
+      * [@PostConstruct and @PreDestroy](part-iii-core-technologies/the-ioc-container/79-annotation-based-container-configuration/postconstruct-and-predestroy.md)
     * [7.10 ClassPath scanning and managed components](part-iii-core-technologies/the-ioc-container/710-classpath-scanning-and-managed-components.md)
     * [7.11 Using JSR 330 Standard Annotation](part-iii-core-technologies/the-ioc-container/711-using-jsr-330-standard-annotation.md)
     * [7.12 Java-based container configuration](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration.md)
