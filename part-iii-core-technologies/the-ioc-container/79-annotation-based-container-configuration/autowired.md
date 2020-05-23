@@ -109,3 +109,50 @@ public class MovieRecommender {
 > 注意，javax.annotation.Priority 注解不可以使用在 @Bean 级别上，因为它不能在方法上声明。
 
 > Priority 的语义可以通过组合 @Order与@Primary 的方式在每个类型的单个bean上实现。
+
+甚至Maps也可以被期望的字符串类型的key值注入。map的值可以是被期望的类型的bean，key应该是相对应的bean的名字。
+
+```
+public class MovieRecommender {
+    private Map<String, MovieCatalog> movieCatalogs;
+    @Autowired
+    public void setMovieCatalogs(Map<String, MovieCatalog> movieCatalogs) {
+        this.movieCatalogs = movieCatalogs;
+    }
+    // ...
+}
+```
+
+默认情况在，自动注入在没有一个匹配时会失败，默认的行为是对修饰的方法、构造器和属性的依赖是必须的。下面的行为可以改变这种描述。
+
+```
+public class SimpleMovieLister {
+    private MovieFinder movieFinder;
+    @Autowired(required = false)
+    public void setMovieFinder(MovieFinder movieFinder) {
+        this.movieFinder = movieFinder;
+    }
+    // ...
+}
+```
+
+>**Note**
+
+>
+
+>
+
+或者，您可以使用 Java 8 提供的表达非必需的特定依赖项的性质java.util.Optional:
+
+```
+public class SimpleMovieLister {
+    @Autowired
+    public void setMovieFinder(Optional<MovieFinder> movieFinder) {
+        ...
+    }
+}
+```
+
+
+
+
