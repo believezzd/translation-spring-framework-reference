@@ -138,9 +138,9 @@ public class SimpleMovieLister {
 
 >**Note**
 
->
+>任何给定bean类只有一个构造函数可以使用required声明@Autowired属性设置为true，指示作为Spring bean使用时自动装配的构造函数。此外，如果required属性被设置为true，则可能只有一个构造函数可以使用 @Autowired 进行注解。如果多个非必需的构造函数声明注释，则它们将被考虑作为自动装配的候选人。依赖项被满足最大数目的构造函数会被Spring容器选择。如果没有一个候选者可以满足，那么主/默认构造函数(如果存在)将满足使用。如果一个类一开始只声明一个构造函数，那么它总是会被使用，即使不是带注释的。带注释的构造函数不一定是 public 的。
 
->
+>推荐使用@Autowired的required属性，而不是@Required注释setter方法。required属性表示自动装配不需要该属性目的。如果属性不能自动获取，则忽略该属性。另一方面，@Required是更强的是，它强制通过容器支持的任何方式设置属性。如果没有值已定义，并引发相应的异常。
 
 或者，您可以使用 Java 8 提供的表达非必需的特定依赖项的性质java.util.Optional:
 
