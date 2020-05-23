@@ -15,3 +15,7 @@ public class CachingMovieLister {
     }
 }
 ```
+
+>**Note**
+
+>更多的有关影响组合不同生命周期机制的说明，见章节“组合生命周期策略”。
