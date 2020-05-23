@@ -36,8 +36,29 @@ jdbc.password=root
 
 PropertyPlaceholderConfigurer的功能并不只限于加载你定义的属性文件。默认情况下，他会检测java系统属性如果配置的属性在properties中无法找到时。你可以自定义查找的属性通过设置systemPropertiesMode属性并指定以下某个值。
 
+* never(0): 不检测系统属性
+* fallback(1): 如果配置文件中不存在则检查系统属性，这是默认值
+* override(2): 先检查系统属性，然后检查自定义配置文件。并且允许系统属性可以覆盖其他属性。
 
+参考PropertyPlaceholderConfigurer的javadocs来获取更多信息。
 
+>**Tip**
 
+> 你可以使用PropertyPlaceholderConfigurer来替代类名，当你在运行时需要获得一个特殊的实现时这个功能很有用。例如：
+
+>```
+><bean >class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+>    <property name="locations">
+>        <value>classpath:com/foo/strategy.properties</value>
+>    </property>
+>    <property name="properties">
+>        <value>custom.strategy.class=com.foo.DefaultStrategy</value>
+>    </property>
+></bean>
+>
+><bean id="serviceStrategy" class="${custom.strategy.class}"/>
+>```
+
+> 
 
 
