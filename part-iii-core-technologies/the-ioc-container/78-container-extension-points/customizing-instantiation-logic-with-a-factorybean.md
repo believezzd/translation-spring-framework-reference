@@ -1,4 +1,4 @@
-#### Customizing instantiation logic with a FactoryBean
+#### Customizing configuration metadata with a BeanFactoryPostProcessor
 
 下一个扩展点是org.springframework.beans.factory.config.BeanFactoryPostProcessor。这个接口的语义和BeanPostProcessor类似，但是有一点不同：BeanFactoryPostProcessor操作的是bean的配置元数据，也就是说，spring的IOC容器语序一个BeanFactoryPostProcessor来读取配置元数据并且潜在的改变他在容器初始化任何bean之前，和BeanFactoryPostProcessors不同。
 

@@ -62,3 +62,5 @@ PropertyPlaceholderConfigurer的功能并不只限于加载你定义的属性文
 > 如果在运行时不能指定一个有效的类，对于一个非延迟加载的bean 在 preInstantiateSingletons() 阶段，当它被创建的时候，会导致失败。
 
 
+
+
