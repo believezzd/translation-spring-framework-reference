@@ -190,6 +190,11 @@
       * [Bean definition profiles](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/bean-definition-profiles.md)
         * [@Profile](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/bean-definition-profiles/profile.md)
         * [XML bean definition profiles](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/bean-definition-profiles/xml-bean-definition-profiles.md)
+        * [Activating a profile](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/bean-definition-profiles/activating-a-profile.md)
+        * [Default profile](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/bean-definition-profiles/default-profile.md)
+      * [PropertySource abstraction](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/propertysource-abstraction.md)
+      * @PropertySource
+      * [Placeholder resolution in statements](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/placeholder-resolution-in-statements.md)
     * [7.14 Registering a LoadTimeVeaver](part-iii-core-technologies/the-ioc-container/714-registering-a-loadtimeveaver.md)
     * [7.15 Additional capabilities of the ApplicationContext](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext.md)
     * [7.16 The BeanFactory](part-iii-core-technologies/the-ioc-container/716-the-beanfactory.md)
