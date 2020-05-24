@@ -1,0 +1,1 @@
+###### @Configuration class-centric use of XML with @ImportResource
