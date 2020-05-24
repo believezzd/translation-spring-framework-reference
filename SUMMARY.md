@@ -185,7 +185,7 @@
         * [Conditionally include @Configuration cz or @Bean methods](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/composing-java-based-configuration/conditionally-include-configuration-cz-or-bean-methods.md)
         * [Combining Java and XML configuration](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/composing-java-based-configuration/combining-java-and-xml-configuration.md)
           * [XML-centric use of @Configuration classes](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/composing-java-based-configuration/combining-java-and-xml-configuration/xml-centric-use-of-c-cz.md)
-          * [@Configuration class-centric use of XML with @ImportResource](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/composing-java-based-configuration/combining-java-and-xml-configuration/configuration-class-centric-use-of-xml-with-importresource.md)
+          * [@Configuration class-centric use of XML with @ImportResource](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/composing-java-based-configuration/combining-java-and-xml-configuration/config-cz-c-use-of-xml-with-ir.md)
     * [7.13 Environment abstraction](part-iii-core-technologies/the-ioc-container/713-environment-abstraction.md)
     * [7.14 Registering a LoadTimeVeaver](part-iii-core-technologies/the-ioc-container/714-registering-a-loadtimeveaver.md)
     * [7.15 Additional capabilities of the ApplicationContext](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext.md)
