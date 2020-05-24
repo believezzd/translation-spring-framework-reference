@@ -160,7 +160,7 @@
       * [Limitations of JSR-330 standard annotations](part-iii-core-technologies/the-ioc-container/711-using-jsr-330-standard-annotation/limitations-of-jsr-330-standard-annotations.md)
     * [7.12 Java-based container configuration](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration.md)
       * [Basic concepts: @Bean and @Configuration](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/basic-concepts-bean-and-configuration.md)
-      * [Instantiating the Spring container using AnnotationConfigApplicationContext](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/instantiating-the-spring-container-using-annotationconfigapplicationcontext.md)
+      * [Instantiating the Spring container using AnnotationConfigApplicationContext](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/instantiating-the-s-con-using-acac.md.md)
         * [Simple construction](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/instantiating-the-spring-container-using-annotationconfigapplicationcontext/simple-construction.md)
         * [Building the container programmatically using register\(Class&lt;?&gt;...\)](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/instantiating-the-spring-container-using-annotationconfigapplicationcontext/build-t-container-p-using-registerclass.md)
     * [7.13 Environment abstraction](part-iii-core-technologies/the-ioc-container/713-environment-abstraction.md)
