@@ -1,5 +1,7 @@
 ##### Support for web applications with AnnotationConfigWebApplicationContext
 
+一个AnnotationConfigApplicationContext支持web的WebApplicationContext是AnnotationConfigWebApplicationContext实现。这个实现可以用在以下情况，如配置spring的ContextLoaderListener servlet监听器、springMVC的DispatcherServlet等等。下面是web.xml片段就是典型的springMVC的web应用。注意context-param和init-param的使用：
+
 ```
 <web-app>
     
