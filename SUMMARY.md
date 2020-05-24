@@ -159,7 +159,7 @@
       * [@Named and @ManageBean: stardard equivalent to the @Component annotation](part-iii-core-technologies/the-ioc-container/711-using-jsr-330-standard-annotation/named-and-managebean-stardard-equivalent-to-the-component-annotation.md)
       * [Limitations of JSR-330 standard annotations](part-iii-core-technologies/the-ioc-container/711-using-jsr-330-standard-annotation/limitations-of-jsr-330-standard-annotations.md)
     * [7.12 Java-based container configuration](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration.md)
-    * [Basic concepts: @Bean and @Configuration](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/basic-concepts-bean-and-configuration.md)
+      * [Basic concepts: @Bean and @Configuration](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/basic-concepts-bean-and-configuration.md)
       * [Instantiating the Spring container using AnnotationConfigApplicationContext](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/instantiating-the-spring-container-using-annotationconfigapplicationcontext.md)
         * [Simple construction](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/instantiating-the-spring-container-using-annotationconfigapplicationcontext/simple-construction.md)
         * [Building the container programmatically using register\(Class&lt;?&gt;...\)](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/instantiating-the-spring-container-using-annotationconfigapplicationcontext/building-the-container-programmatically-using-registerclass.md)
