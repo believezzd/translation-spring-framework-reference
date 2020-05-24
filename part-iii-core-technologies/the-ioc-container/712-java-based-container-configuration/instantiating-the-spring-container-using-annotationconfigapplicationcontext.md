@@ -1,0 +1,8 @@
+#### Instantiating the Spring container using AnnotationConfigApplicationContext
+
+spring的AnnotationConfigApplicationContext是在spring3.0中加入的。这个ApplicationContext的实现不仅允许@Configuration修饰的类作为输入，也允许普通的@Component类和使用JSR330元数据的注解类。
+
+当@Configuration修饰的类作为输入，@Configuration类本身会注册为一个bean的定义，并且所有该类定义的@Bean方法也会注册为bean的定义。
+
+当@Component和JSR330的类被提供，他们会被注册为bean，并且会作为依赖注入的元数据如果有其他类需要他们的时候。
+
