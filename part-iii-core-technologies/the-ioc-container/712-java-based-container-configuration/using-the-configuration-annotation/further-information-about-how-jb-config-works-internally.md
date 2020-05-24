@@ -1,0 +1,1 @@
+##### Further information about how Java-based configuration works internally
