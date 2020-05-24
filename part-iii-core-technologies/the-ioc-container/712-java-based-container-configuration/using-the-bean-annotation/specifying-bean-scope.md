@@ -1,0 +1,2 @@
+##### Specifying bean scope
+
