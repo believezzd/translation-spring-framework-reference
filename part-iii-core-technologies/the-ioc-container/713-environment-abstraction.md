@@ -1,1 +1,8 @@
 ### 7.13 Environment abstraction
+
+环境是容器中抽象的模型，应用中环境分为两个关键的部分：profiles和properties
+
+profile是一个命名的bean定义的逻辑组合，如果在profile被激活是可以被容器注册。通过xml或注解定义的bean将分配给profile。环境的角色和profile是有关的，而且取决于哪个profile被激活和哪个profile是默认被激活的。
+
+properties在几乎所有的应用起到一个很重要的作用，并且在各种不同的源码中存在：properties文件、java系统properties、系统环境变量、JNDI、servlet上下文参数、专用的properties对象、map等等。环境的角色和用户提供的properties是有关的，使用一个方便的服务接口用于配置property源码和处理里面的内容。
+
