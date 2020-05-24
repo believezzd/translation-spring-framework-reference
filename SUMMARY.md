@@ -162,7 +162,7 @@
       * [Basic concepts: @Bean and @Configuration](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/basic-concepts-bean-and-configuration.md)
       * [Instantiating the Spring container using AnnotationConfigApplicationContext](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/instantiating-the-spring-container-using-annotationconfigapplicationcontext.md)
         * [Simple construction](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/instantiating-the-spring-container-using-annotationconfigapplicationcontext/simple-construction.md)
-        * [Building the container programmatically using register\(Class&lt;?&gt;...\)](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/instantiating-the-spring-container-using-annotationconfigapplicationcontext/building-the-container-programmatically-using-registerclass.md)
+        * [Building the container programmatically using register\(Class&lt;?&gt;...\)](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/instantiating-the-spring-container-using-annotationconfigapplicationcontext/build-t-container-p-using-registerclass.md)
     * [7.13 Environment abstraction](part-iii-core-technologies/the-ioc-container/713-environment-abstraction.md)
     * [7.14 Registering a LoadTimeVeaver](part-iii-core-technologies/the-ioc-container/714-registering-a-loadtimeveaver.md)
     * [7.15 Additional capabilities of the ApplicationContext](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext.md)
