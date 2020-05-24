@@ -1,2 +1,0 @@
-##### Building the container programmatically using register(Class<?>...)
-
