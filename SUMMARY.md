@@ -155,6 +155,8 @@
       * [Providing a scope for autodetected components](part-iii-core-technologies/the-ioc-container/710-classpath-scanning-and-managed-components/providing-a-scope-for-autodetected-components.md)
       * [Providing qualifier metadata with annotations](part-iii-core-technologies/the-ioc-container/710-classpath-scanning-and-managed-components/providing-qualifier-metadata-with-annotations.md)
     * [7.11 Using JSR 330 Standard Annotation](part-iii-core-technologies/the-ioc-container/711-using-jsr-330-standard-annotation.md)
+      * [Dependency Injection With @Inject and @Named](part-iii-core-technologies/the-ioc-container/711-using-jsr-330-standard-annotation/dependency-injection-with-inject-and-named.md)
+      * [@Named and @ManageBean: stardard equivalent to the @Component annotation](part-iii-core-technologies/the-ioc-container/711-using-jsr-330-standard-annotation/named-and-managebean-stardard-equivalent-to-the-component-annotation.md)
     * [7.12 Java-based container configuration](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration.md)
     * [7.13 Environment abstraction](part-iii-core-technologies/the-ioc-container/713-environment-abstraction.md)
     * [7.14 Registering a LoadTimeVeaver](part-iii-core-technologies/the-ioc-container/714-registering-a-loadtimeveaver.md)
