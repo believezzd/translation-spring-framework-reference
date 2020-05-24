@@ -193,7 +193,7 @@
         * [Activating a profile](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/bean-definition-profiles/activating-a-profile.md)
         * [Default profile](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/bean-definition-profiles/default-profile.md)
       * [PropertySource abstraction](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/propertysource-abstraction.md)
-      * @PropertySource
+      * [@PropertySource](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/propertysource.md)
       * [Placeholder resolution in statements](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/placeholder-resolution-in-statements.md)
     * [7.14 Registering a LoadTimeVeaver](part-iii-core-technologies/the-ioc-container/714-registering-a-loadtimeveaver.md)
     * [7.15 Additional capabilities of the ApplicationContext](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext.md)
