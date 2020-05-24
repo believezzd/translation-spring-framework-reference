@@ -1,0 +1,4 @@
+##### Combining Java and XML configuration
+
+spring的@Configuration类目的是完全代替xml文件。一些设备例如spring的xml命名空间仍然保留在容器中。由于xml有时是方便的，你可以有一个选择：例如以xml为中心的形式进行使用，例如，ClassPathXmlApplicationContext或以java为中心的风格使用AnnotationConfigApplicationContext和@ImportResource注解来导入需要的xml文件。
+
