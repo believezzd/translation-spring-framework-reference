@@ -176,6 +176,8 @@
         * [Bean aliasing](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/using-the-bean-annotation/bean-aliasing.md)
         * [Bean description](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/using-the-bean-annotation/bean-description.md)
       * [Using the @Configuration annotation](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/using-the-configuration-annotation.md)
+        * [Injecting inter-bean dependencies](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/using-the-configuration-annotation/injecting-inter-bean-dependencies.md)
+        * [Lookup method injection](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/using-the-configuration-annotation/lookup-method-injection.md)
       * [Composing Java-based configuration](part-iii-core-technologies/the-ioc-container/712-java-based-container-configuration/composing-java-based-configuration.md)
     * [7.13 Environment abstraction](part-iii-core-technologies/the-ioc-container/713-environment-abstraction.md)
     * [7.14 Registering a LoadTimeVeaver](part-iii-core-technologies/the-ioc-container/714-registering-a-loadtimeveaver.md)
