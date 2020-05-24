@@ -18,3 +18,24 @@ public class MovieFinderImpl implements MovieFinder {
 }
 ```
 
+>**Note**
+
+> 如果你不希望默认的命名策略，你可以提供自定义的命名策略。首先，实现BeanNameGenerator接口，然后保证包含一个默认无参构造器。然而，在配置扫描器时提供全限定的类名。
+
+```
+@Configuration
+@ComponentScan(basePackages = "org.example", nameGenerator = MyNameGenerator.class)
+public class AppConfig {
+    ...
+}
+```
+
+```
+<beans>
+    <context:component-scan base-package="org.example"
+name-generator="org.example.MyNameGenerator" />
+</beans>
+```
+
+作为通用的规则，考虑使用注解定义那么淡其他组件或许定义明显的引用。另一方面，自动生成的名字是可以胜任需求的，当容器配置bean时。
+
