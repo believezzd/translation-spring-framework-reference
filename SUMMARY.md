@@ -204,6 +204,8 @@
         * [Ordering listeners](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext/standard-and-custom-events/ordering-listeners.md)
         * [Generic events](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext/standard-and-custom-events/generic-events.md)
       * [Convenient access to l-l resources](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext/convenient-access-to-l-l-resources.md)
+      * [Convinient ac instantiation for wa](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext/convinient-ac-instantiation-for-wa.md)
+      * [Deploying a Spring ac as a Java EE RAR file](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext/deploying-a-spring-ac-as-a-java-ee-rar-file.md)
     * [7.16 The BeanFactory](part-iii-core-technologies/the-ioc-container/716-the-beanfactory.md)
   * [8. Resources](part-iii-core-technologies/resources.md)
     * [Introduction](part-iii-core-technologies/resources/introduction.md)
