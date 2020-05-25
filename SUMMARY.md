@@ -210,6 +210,6 @@
       * [BeanFactory or ApplicationContext](part-iii-core-technologies/the-ioc-container/716-the-beanfactory/beanfactory-or-applicationcontext.md)
       * [Glue code and the evil singleton](part-iii-core-technologies/the-ioc-container/716-the-beanfactory/glue-code-and-the-evil-singleton.md)
   * [8. Resources](part-iii-core-technologies/resources.md)
-    * [Introduction](part-iii-core-technologies/resources/introduction.md)
+    * [8.1 Introduction](part-iii-core-technologies/resources/introduction.md)
 * [Part IV. Testing](part-iv-testing.md)
 
