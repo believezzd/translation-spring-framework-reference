@@ -1,1 +1,13 @@
 #### Deploying a Spring ApplicationContext as a Java EE RAR file
+
+可以使用RAR文件不是一个spring的ApplicationContext，封装上下文和所有需要的类和JAR库在JavaEE RAR部署包中。这个单独启动一个应用上下文是一样的，只是在JavaEE环境中运行，允许访问JavaEE服务设施。RAR部署时更加自然的代替WAR文件，实际上，WAR文件没有任何HTTP切入点可以只用于在JavaEE环境中启动一个spring的上下文。
+
+RAR部署是一个理想的方式对于不需要HTTP但是包含消息和计划任务的应用。在上下文中的bean可以使用应用服务器资源例如JTA事务管理和绑定JNDI的JDBC数据源和JMS连接工厂，并且可以注册平台的JMX服务器——所有通过spring标准事务管理、JNDI和JMX支持。应用组件于应用服务器的JCA工作管理可以通过spring的任务执行器抽象相互作用。
+
+请查询SpringContextResourceAdapter类的JavaDocs来了解在RAR部署中的配置细节。
+
+对于一个spring应用上下文在JavaEE RAR文件中的简单部署：将所有应用类打包到RAR文件中，是一个标准的JAR文件只是后缀不同。将所有需要的库jar放入RAR的根路径。添加"META-INF/ra.xml"部署描述（在SpringContextResourceAdapters的JavaDocs中有说明）和相应的spring的xml的bean定义（通常是"META-INF/applicationContext.xml"），然后将RAR文件放入你应用服务器的部署路径中。
+
+>**Note**
+>这样的RAR部署单元通常是自包含的：他们不需要向外界暴露组件，不需要相同应用的其他模块。基于RAR应用上下文通常使用JMS目的地来共享其他模块。一个基于RAR的应用上下文也可以计划某些任务，对在文件系统中的新文件做出反应。如果他需要允许同步访问外部，可以暴露RMI来使得其他引用模块在同一台机器上可以被使用。
+
