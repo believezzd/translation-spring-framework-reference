@@ -207,6 +207,8 @@
       * [Convinient ac instantiation for wa](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext/convinient-ac-instantiation-for-wa.md)
       * [Deploying a Spring ac as a Java EE RAR file](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext/deploying-a-spring-ac-as-a-java-ee-rar-file.md)
     * [7.16 The BeanFactory](part-iii-core-technologies/the-ioc-container/716-the-beanfactory.md)
+      * [BeanFactory or ApplicationContext](part-iii-core-technologies/the-ioc-container/716-the-beanfactory/beanfactory-or-applicationcontext.md)
+      * [Glue code and the evil singleton](part-iii-core-technologies/the-ioc-container/716-the-beanfactory/glue-code-and-the-evil-singleton.md)
   * [8. Resources](part-iii-core-technologies/resources.md)
     * [Introduction](part-iii-core-technologies/resources/introduction.md)
 * [Part IV. Testing](part-iv-testing.md)
