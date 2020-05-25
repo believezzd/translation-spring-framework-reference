@@ -1,1 +1,11 @@
 ### 7.15 Additional capabilities of the ApplicationContext
+
+在介绍章节中讨论的，org.springframework.beans.factory包中提供了基本的功能用于管理和操作bean，包括以编程的形式。org.springframework.context包添加了ApplicationContext接口，扩展了BeanFactory接口，用于扩展其他接口提供了额外的功能在更多原生框架的风格。大部分人以声明的风格使用ApplicationContext，不是编程进行创建，而是使用ContextLoader来自动实例化一个应用作为java ee web应用启动过程的一部分。
+
+为了增强BeanFactory的功能以原生框架的风格，context包中也提供了以下功能：
+
+* 添加了国际化风格的消息，通过MessageSource接口。
+* 通过ResourceLoader接口可以访问资源例如URL和文件。
+* 通过ApplicationEventPublisher接口，发布实现了ApplicationListener的bean的事件
+* 加载多个上下文，允许每一个关注于特定的层，例如应用的web层通过HierarchicalBeanFactory接口。
+

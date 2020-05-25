@@ -197,6 +197,8 @@
       * [Placeholder resolution in statements](part-iii-core-technologies/the-ioc-container/713-environment-abstraction/placeholder-resolution-in-statements.md)
     * [7.14 Registering a LoadTimeVeaver](part-iii-core-technologies/the-ioc-container/714-registering-a-loadtimeveaver.md)
     * [7.15 Additional capabilities of the ApplicationContext](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext.md)
+      * [Internationalization using MessageSource](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext/internationalization-using-messagesource.md)
+      * [Standard and custom events](part-iii-core-technologies/the-ioc-container/715-additional-capabilities-of-the-applicationcontext/standard-and-custom-events.md)
     * [7.16 The BeanFactory](part-iii-core-technologies/the-ioc-container/716-the-beanfactory.md)
   * [8. Resources](part-iii-core-technologies/resources.md)
     * [Introduction](part-iii-core-technologies/resources/introduction.md)
