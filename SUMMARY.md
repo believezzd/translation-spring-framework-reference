@@ -211,5 +211,6 @@
       * [Glue code and the evil singleton](part-iii-core-technologies/the-ioc-container/716-the-beanfactory/glue-code-and-the-evil-singleton.md)
   * [8. Resources](part-iii-core-technologies/resources.md)
     * [8.1 Introduction](part-iii-core-technologies/resources/introduction.md)
+    * [8.2 The Resource interface](part-iii-core-technologies/resources/82-the-resource-interface.md)
 * [Part IV. Testing](part-iv-testing.md)
 
