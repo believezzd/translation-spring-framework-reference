@@ -1,0 +1,7 @@
+###### Implications on portability
+
+如果特定的路径已经是一个文件的URL，因为基本的ResourceLoader是文件系统，通配符作为一种完全可移植的形式工作
+
+如果特定的路径是classpath路径，那么解析器必须得到最后一个非通配符的路径片段URL通过Classloader.getResource()调用。自从这只是路径的一个节点（在最后不是文件）实际没有被定义（在ClassLoader的javadocs中）将返回URL在这种情况下。在实际中，通常java.io.File代表一个路径，classpath资源处理一个文件系统位置或一个jar的URL，如果classpath资源被解析为一个jar位置。而且，这种操作依然需要考虑可移植性。
+
+如果一个jar的URL用于最后一个非通配符片段，解析器必须可以从中获得一个java.net.JarURLConnection或解析jar的URL可以使用jar并解析通配符。在大部分环境中可以运行，但是在其他环境中会失败因此强烈推荐从jar中处理通配符并且经过测试在你实际使用的环境中。
