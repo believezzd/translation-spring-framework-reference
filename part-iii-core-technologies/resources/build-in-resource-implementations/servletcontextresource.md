@@ -1,0 +1,5 @@
+#### ServletContextResource
+
+这是一个用于ServletContext资源的实现，相对于web应用根路径来解析相对路径。
+
+也支持流访问和URL访问，但是只允许java.io.File的访问当web应用打包是扩展的并且资源在文件系统中。不管是否扩展在文件系统中或直接从JAR中访问或其他的类似于DB也依赖于Servlet容器。

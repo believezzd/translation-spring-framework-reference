@@ -1,0 +1,5 @@
+#### UrlResource
+
+URLResource包装了java.net.URL，可以被用于访问任何obje通过URL，例如文件、HTTP目标、FTP目标等等。所有的URL有标准的字符串代表，例如标准的前缀用于暗示URL的类型区别于其他类型。包括file用于访问文件系统，http用于通过http协议来访问资源，ftp用于通过ftp访问资源等等。
+
+使用URLResource构造器通过java代码创建一个URLResource，但是通常隐含的被创建当你调用API方法需要字符串参数意味着一个路径。最后一种情况，一个JavaBeans PropertyEditor将会最终决定创建什么类型的资源。如果字符串包含一个常见的前缀例如classpath，将会创建适当特定资源根据前缀。然而，如果没有识别出前缀，将会假设是一个标准的URL字符串后创建一个URLResource。

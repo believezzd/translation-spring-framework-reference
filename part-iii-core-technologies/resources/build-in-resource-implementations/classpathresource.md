@@ -1,0 +1,7 @@
+#### ClassPathResource
+
+这个类代表一个资源包含在classpath中。可以用于线程上下文类加载器、一个给定的类加载器或用于加载资源的给定类。
+
+这个资源实现支持java.io.File如果类路径资源在文件系统中，但是不支持jar中的资源并且不能扩展（通过servlet引擎或环境因素）到文件系统。为了解决不同资源的实现也支持java.net.URL的处理。
+
+通过java代码使用ClassPathResource的构造器来创建ClassPathResource，但是通常隐含的被创建当你调用API方法用字符串参数来代表一个路径。最后一种情况，JavaBeans PropertyEditor将会识别特定的前缀classpath，对于字符串路径并创建一个ClassPathResource。
