@@ -232,5 +232,6 @@
         * [Other notes relating to wildcards](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/wildcards-in-ac-con-res-path/other-notes-relating-to-wildcards.md)
       * [FileSystemResource caveats](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/filesystemresource-caveats.md)
   * [9. Validation, Data Binding, and Type Conversion](part-iii-core-technologies/validation-data-binding-and-type-conversion.md)
+    * [Introduction](part-iii-core-technologies/validation-data-binding-and-type-conversion/introduction.md)
 * [Part IV. Testing](part-iv-testing.md)
 
