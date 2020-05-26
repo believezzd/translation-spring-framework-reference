@@ -38,3 +38,12 @@ public class PersonValidator implements Validator {
     }
 }
 ```
+
+你看到了，ValidationUtils中的静态rejectIfEmpty方法用于拒绝当如果name属性是null或者是一个空字符串。可以查看ValidationUtils的javadocs来查看之前的例子是如何工作的。
+
+可以单独实现一个简单的Validator类用于验证每个富object中的内置object，最好将对于内置object的验证逻辑压缩到一个自有的Validator实现中。一个富object的简单例子可以是由两个字符串属性组成的Customer（一个姓，一个名）和一个复杂的Address的object。Address的object可以独立于Customer的object，因此可以实现一个AddressValidator。如果你需要你的CustomerValidator来服用逻辑包括在AddressValidator不需要复制和粘贴，你可以独立注入或在CustomerValidator中使用AddressValidator，你可以使用如下：
+
+
+
+
+
