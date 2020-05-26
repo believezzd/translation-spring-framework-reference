@@ -223,5 +223,9 @@
     * [8.5 The ResourceLoaderAware interface](part-iii-core-technologies/resources/85-the-resourceloaderaware-interface.md)
     * [8.6 Resources as dependencies](part-iii-core-technologies/resources/86-resources-as-dependencies.md)
     * [8.7 Application contexts and Resource paths](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths.md)
+      * [Constructing application contexts](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/constructing-application-contexts.md)
+        * [Con czPathXmlAc instances - shortcuts](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/constructing-application-contexts/con-czpathxmlac-instances-shortcuts.md)
+      * [Wildcards in ac con res path](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/wildcards-in-ac-con-res-path.md)
+      * [FileSystemResource caveats](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/filesystemresource-caveats.md)
 * [Part IV. Testing](part-iv-testing.md)
 
