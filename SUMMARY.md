@@ -228,6 +228,8 @@
       * [Wildcards in ac con res path](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/wildcards-in-ac-con-res-path.md)
         * [Ant-style Patterns](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/wildcards-in-ac-con-res-path/ant-style-patterns.md)
           * [Implications on portability](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/wildcards-in-ac-con-res-path/ant-style-patterns/implications-on-portability.md)
+        * [The classpath\*: prefix](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/wildcards-in-ac-con-res-path/the-classpath-prefix.md)
+        * [Other notes relating to wildcards](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/wildcards-in-ac-con-res-path/other-notes-relating-to-wildcards.md)
       * [FileSystemResource caveats](part-iii-core-technologies/resources/87-application-contexts-and-resource-paths/filesystemresource-caveats.md)
 * [Part IV. Testing](part-iv-testing.md)
 
