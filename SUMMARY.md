@@ -212,5 +212,6 @@
   * [8. Resources](part-iii-core-technologies/resources.md)
     * [8.1 Introduction](part-iii-core-technologies/resources/introduction.md)
     * [8.2 The Resource interface](part-iii-core-technologies/resources/82-the-resource-interface.md)
+    * [8.3 Build-in Resource implementations](part-iii-core-technologies/resources/build-in-resource-implementations.md)
 * [Part IV. Testing](part-iv-testing.md)
 
