@@ -1,4 +1,4 @@
-### Resolving codes to error messages
+### 9.3 Resolving codes to error messages
 
 我们讨论一下数据绑定和验证。输出的信息和相关的验证错误是我们最后需要讨论的问题。在上面的例子，我们拒绝了name和age属性。如果我们通过使用MessageSource来输出错误信息，我们可以使用错误码当我们在决绝属性时（上面例子中的name和age）。当你调用（无论是直接或间接的使用ValidationUtils类）rejectValue或其他reject方法从Error接口中，其中不只会传递你提供的代码，也包括一些其他的错误代码。这些被注册的错误代码由使用的MessageCodesResolver来决定。默认的，会使用DefaultMessageCodesResolver，不只会注册一个你给定的错误信息，也包括你传递给reject方法的属性名。因此你可以通过使用rejectValue("age", "too.darn.old")来决绝一个field而区分与too.darn.old代码，spring 将会注册too.darn.old.age和too.darn.old.age.int（因此首先包括field名，另一个会包括field的类型），这样会方便开发者用于定位错误信息。
 

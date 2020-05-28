@@ -1,4 +1,4 @@
-### Bean manipulation and the BeanWrapper
+### 9.4 Bean manipulation and the BeanWrapper
 
 org.springframework.beans包实现了oracle提供的javabean标准绑定。一个javabean就是一个简单的类，有一个默认的无参构造器，按照一定的参数命名规范，如有个属性名字为bingoMadness，则有set方法setBingoMadness和get方法getBingoMadness。更多有关javabean和定义的信息请参考oracle的官网。
 

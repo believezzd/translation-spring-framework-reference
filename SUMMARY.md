@@ -239,5 +239,10 @@
       * [Setting and getting ban properties](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper/setting-and-getting-ban-properties.md)
       * [Build-in PropertyEditor impl](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper/build-in-propertyeditor-impl.md)
         * [Registering ad custom pe](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper/build-in-propertyeditor-impl/registering-ad-custom-pe.md)
+          * [Using PropertyEditorRegistrars](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper/build-in-propertyeditor-impl/registering-ad-custom-pe/using-propertyeditorregistrars.md)
+    * [Spring Type Conversion](part-iii-core-technologies/validation-data-binding-and-type-conversion/spring-type-conversion.md)
+    * [Spring Field Formatting](part-iii-core-technologies/validation-data-binding-and-type-conversion/spring-field-formatting.md)
+    * [Configuring a global date & time format](part-iii-core-technologies/validation-data-binding-and-type-conversion/configuring-a-global-date-and-time-format.md)
+    * [Spring Validation](part-iii-core-technologies/validation-data-binding-and-type-conversion/spring-validation.md)
 * [Part IV. Testing](part-iv-testing.md)
 
