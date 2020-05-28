@@ -237,5 +237,7 @@
     * [Resolving codes to error messages](part-iii-core-technologies/validation-data-binding-and-type-conversion/resolving-codes-to-error-messages.md)
     * [Bean manipulation and the BeanWrapper](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper.md)
       * [Setting and getting ban properties](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper/setting-and-getting-ban-properties.md)
+      * [Build-in PropertyEditor impl](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper/build-in-propertyeditor-impl.md)
+        * [Registering ad custom pe](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper/build-in-propertyeditor-impl/registering-ad-custom-pe.md)
 * [Part IV. Testing](part-iv-testing.md)
 
