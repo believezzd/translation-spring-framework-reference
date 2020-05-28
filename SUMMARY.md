@@ -265,4 +265,10 @@
   * [14. Unit Testing](part-iv-testing/unit-testing.md)
   * [15. Integration Testing](part-iv-testing/integration-testing.md)
   * [16. Further Resources](part-iv-testing/further-resources.md)
+* [Part V. Data Access](part-v-data-access.md)
+  * [17. Transaction Management](part-v-data-access/transaction-management.md)
+  * [18. DAO support](part-v-data-access/dao-support.md)
+  * [19. Data access with JDBC](part-v-data-access/data-access-with-jdbc.md)
+  * [20. Object Relational Mapping \(ORM\) Data Access](part-v-data-access/object-relational-mapping-orm-data-access.md)
+  * [21. Marshalling XML using O/X Mappers](part-v-data-access/marshalling-xml-using-ox-mappers.md)
 
