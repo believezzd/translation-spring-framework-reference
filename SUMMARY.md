@@ -261,4 +261,8 @@
   * [11. Aspect Oriented Programming with Spring](part-iii-core-technologies/aspect-oriented-programming-with-spring.md)
   * [12. Spring AOP APIs](part-iii-core-technologies/spring-aop-apis.md)
 * [Part IV. Testing](part-iv-testing.md)
+  * [13. Introduction to Spring Testing](part-iv-testing/introduction-to-spring-testing.md)
+  * [14. Unit Testing](part-iv-testing/unit-testing.md)
+  * [15. Integration Testing](part-iv-testing/integration-testing.md)
+  * [16. Further Resources](part-iv-testing/further-resources.md)
 
