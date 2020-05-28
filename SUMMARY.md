@@ -234,5 +234,8 @@
   * [9. Validation, Data Binding, and Type Conversion](part-iii-core-technologies/validation-data-binding-and-type-conversion.md)
     * [Introduction](part-iii-core-technologies/validation-data-binding-and-type-conversion/introduction.md)
     * [Validation using Spring's Validator interface](part-iii-core-technologies/validation-data-binding-and-type-conversion/validation-using-springs-validator-interface.md)
+    * [Resolving codes to error messages](part-iii-core-technologies/validation-data-binding-and-type-conversion/resolving-codes-to-error-messages.md)
+    * [Bean manipulation and the BeanWrapper](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper.md)
+      * [Setting and getting ban properties](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper/setting-and-getting-ban-properties.md)
 * [Part IV. Testing](part-iv-testing.md)
 
