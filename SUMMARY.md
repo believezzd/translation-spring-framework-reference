@@ -271,4 +271,11 @@
   * [19. Data access with JDBC](part-v-data-access/data-access-with-jdbc.md)
   * [20. Object Relational Mapping \(ORM\) Data Access](part-v-data-access/object-relational-mapping-orm-data-access.md)
   * [21. Marshalling XML using O/X Mappers](part-v-data-access/marshalling-xml-using-ox-mappers.md)
+* [Part VI. The Web](part-vi-the-web.md)
+  * [22. Web MVC framework](part-vi-the-web/web-mvc-framework.md)
+  * [23. View Technologies](part-vi-the-web/view-technologies.md)
+  * [24. Integrating with other web frameworks](part-vi-the-web/integrating-with-other-web-frameworks.md)
+  * [25. Portlet MVC Framework](part-vi-the-web/portlet-mvc-framework.md)
+  * [26. WebSocket Support](part-vi-the-web/websocket-support.md)
+  * [27. CORS Support](part-vi-the-web/cors-support.md)
 
