@@ -1,1 +1,7 @@
 ### 9.6 Spring Field Formatting
+
+在前面的几节中讨论，core.convert是一个通用的类型转换系统。他提供特定的ConversionService的API和强健的类型转换器实现用于实现一个类型到另一个类型的转换。一个spring的容器使用这个系统来绑定bean的属性值。此外，spring的表达式语言和DataBinder使用这个系统来绑定属性值。例如，当SpEL需要迫使一个Short类型转换为Long类型用于试图完成expression.setValue(Object bean, Object value)，那这个系统可以提供的功能。
+
+现在考虑典型客户端环境下的类型转换例如作为一个web或桌面应用。在这样的环境下，你通常需要转换字符串来支持客户端回传程序，也包括转换成为字符串用于支持视图表现程序。此外，你也需要本地化字符串值。通常的转化器SPI没有直接进行直接的格式转换根据需要。为了实现这个功能，spring3加入了方便的格式化SPI提供简单强健的的属性编辑器用于客户端环境。
+
+通常，当你需要事项通用类型转换时使用转换器SPI；例如，为了方便将java.util.Date转换为java.lang.Long。当你在客户端环境使用格式化SPI，例如作为一个web营养共，你需要格式化和打印本地化的属性值。ConversionService提供了统一的类型转换API用于所有的SPI。
