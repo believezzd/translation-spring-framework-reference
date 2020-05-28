@@ -257,5 +257,8 @@
       * [Configuring Formatting in Spring MVC](part-iii-core-technologies/validation-data-binding-and-type-conversion/spring-field-formatting/configuring-formatting-in-spring-mvc.md)
     * [9.7 Configuring a global date & time format](part-iii-core-technologies/validation-data-binding-and-type-conversion/configuring-a-global-date-and-time-format.md)
     * [9.8 Spring Validation](part-iii-core-technologies/validation-data-binding-and-type-conversion/spring-validation.md)
+  * [10. Spring Expression Language \(SpEL\)](part-iii-core-technologies/spring-expression-language-spel.md)
+  * [11. Aspect Oriented Programming with Spring](part-iii-core-technologies/aspect-oriented-programming-with-spring.md)
+  * [12. Spring AOP APIs](part-iii-core-technologies/spring-aop-apis.md)
 * [Part IV. Testing](part-iv-testing.md)
 
