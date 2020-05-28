@@ -288,4 +288,13 @@
   * [34. Task Execution and Scheduling](part-vii-integration/task-execution-and-scheduling.md)
   * [35. Dynamic language support](part-vii-integration/dynamic-language-support.md)
   * [36. Cache Abstraction](part-vii-integration/cache-abstraction.md)
+* [Part VIII. Appendices](part-viii-appendices.md)
+  * [37. Migrating to Spring Framework 4.x](part-viii-appendices/migrating-to-spring-framework-4x.md)
+  * [38. Spring Annotation Programming Model](part-viii-appendices/spring-annotation-programming-model.md)
+  * [39. Classic Spring Usage](part-viii-appendices/classic-spring-usage.md)
+  * [40. Classic Spring AOP Usage](part-viii-appendices/classic-spring-aop-usage.md)
+  * [41. XML Schema-based configuration](part-viii-appendices/xml-schema-based-configuration.md)
+  * [42. Extensible XML authoring](part-viii-appendices/extensible-xml-authoring.md)
+  * [43. spring JSP Tag Library](part-viii-appendices/spring-jsp-tag-library.md)
+  * [44. spring-form JSP Tag Library](part-viii-appendices/spring-form-jsp-tag-library.md)
 
