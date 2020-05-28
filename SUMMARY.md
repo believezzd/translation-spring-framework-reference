@@ -240,9 +240,9 @@
       * [Build-in PropertyEditor impl](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper/build-in-propertyeditor-impl.md)
         * [Registering ad custom pe](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper/build-in-propertyeditor-impl/registering-ad-custom-pe.md)
           * [Using PropertyEditorRegistrars](part-iii-core-technologies/validation-data-binding-and-type-conversion/bean-manipulation-and-the-beanwrapper/build-in-propertyeditor-impl/registering-ad-custom-pe/using-propertyeditorregistrars.md)
-    * [Spring Type Conversion](part-iii-core-technologies/validation-data-binding-and-type-conversion/spring-type-conversion.md)
-    * [Spring Field Formatting](part-iii-core-technologies/validation-data-binding-and-type-conversion/spring-field-formatting.md)
-    * [Configuring a global date & time format](part-iii-core-technologies/validation-data-binding-and-type-conversion/configuring-a-global-date-and-time-format.md)
-    * [Spring Validation](part-iii-core-technologies/validation-data-binding-and-type-conversion/spring-validation.md)
+    * [9.5 Spring Type Conversion](part-iii-core-technologies/validation-data-binding-and-type-conversion/spring-type-conversion.md)
+    * [9.6 Spring Field Formatting](part-iii-core-technologies/validation-data-binding-and-type-conversion/spring-field-formatting.md)
+    * [9.7 Configuring a global date & time format](part-iii-core-technologies/validation-data-binding-and-type-conversion/configuring-a-global-date-and-time-format.md)
+    * [9.8 Spring Validation](part-iii-core-technologies/validation-data-binding-and-type-conversion/spring-validation.md)
 * [Part IV. Testing](part-iv-testing.md)
 
