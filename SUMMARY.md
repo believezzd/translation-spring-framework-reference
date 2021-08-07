@@ -1,7 +1,6 @@
 # Summary
 
 * [序](README.md)
-* [目录](table-of-contents.md)
 * [Part I. Overview of Spring Framework](part-i-overview-of-spring-framework.md)
   * [1. Geting Started with Spring](part-i-overview-of-spring-framework/geting-started-with-spring.md)
   * [2. Introduction to the Spring Framework](part-i-overview-of-spring-framework/introduction-to-the-spring-framework.md)
@@ -298,5 +297,4 @@
   * [42. Extensible XML authoring](part-viii-appendices/extensible-xml-authoring.md)
   * [43. spring JSP Tag Library](part-viii-appendices/spring-jsp-tag-library.md)
   * [44. spring-form JSP Tag Library](part-viii-appendices/spring-form-jsp-tag-library.md)
-* [Table of Contents](table-of-contents.md)
 
